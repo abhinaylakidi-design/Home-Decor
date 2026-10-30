@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Details | UrbanHaven</title>
+  <meta name="description" content="Explore this UrbanHaven service in detail: what is included, why choose it, pricing and answers to common questions." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="service-detail.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html" aria-label="UrbanHaven home">
+        <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+        <span class="brand-text">
+          <span class="brand-name">UrbanHaven</span>
+          <span class="brand-tag">Furniture for Modern Living</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li class="nav-dropdown">
+            <details>
+              <summary class="nav-dropdown-toggle">Home <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i></summary>
+              <div class="nav-dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="home2-premium.html">Home 2 Premium</a>
+              </div>
+            </details>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="decor.html">Decor Accessories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-cta"><a href="visit-showroom.html" class="btn btn-primary">Visit Showroom</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="icon icon-moon"></i>
+          <i data-lucide="sun" class="icon icon-sun"></i>
+        </button>
+        <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle right-to-left layout">
+          <i data-lucide="arrow-left-right" class="icon"></i>
+        </button>
+        <a href="visit-showroom.html" class="btn btn-primary header-cta">Visit Showroom</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <i data-lucide="menu" class="icon icon-menu"></i>
+          <i data-lucide="x" class="icon icon-close"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!--
+    One template page for all 6 services.
+    service-detail.js reads ?service=<slug> from the URL and fills every
+    section below with that service's own content:
+      design-consultation | custom-furniture | space-planning |
+      delivery-assembly | home-styling | warranty-care
+  -->
+  <main id="sdMain">
+    <section class="sd-hero" id="sdHero" aria-live="polite"></section>
+    <section class="section" id="overview"></section>
+    <section class="section section-alt" id="why"></section>
+    <section class="section" id="pricing"></section>
+    <section class="section section-alt" id="faq"></section>
+    <section class="sd-cta-wrap" id="cta"></section>
+
+    <noscript>
+      <div class="container" style="padding:160px 0 80px;text-align:center">
+        <h1>Service details</h1>
+        <p>Please enable JavaScript to view this service, or <a href="service.html" style="text-decoration:underline">return to all services</a>.</p>
+      </div>
+    </noscript>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="UrbanHaven home">
+          <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+          <span class="brand-text">
+            <span class="brand-name">UrbanHaven</span>
+            <span class="brand-tag">Furniture for Modern Living</span>
+          </span>
+        </a>
+        <p>Warm, well-made furniture and decor to help you build a home that feels like yours.</p>
+
+        <div class="socials">
+          <a href="#" class="social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#living">Living Room</a></li>
+          <li><a href="products.html#bedroom">Bedroom</a></li>
+          <li><a href="products.html#dining">Dining</a></li>
+          <li><a href="products.html#office">Office</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon-sm"></i> 24 Heritage Lane, Design District</li>
+          <li><i data-lucide="clock" class="icon-sm"></i> Daily, 10:00 AM to 8:00 PM</li>
+          <li><i data-lucide="mail" class="icon-sm"></i> hello@urbanhaven.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year">2026</span> UrbanHaven. All rights reserved.</p>
+        <ul class="legal">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="service-detail.js"></script>
+</body>
+</html>

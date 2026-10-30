@@ -1,0 +1,825 @@
+/* =========================================================
+   UrbanHaven | Visit Showroom page styles (standalone)
+   Palette, fonts and buttons follow the Home page.
+   No navbar or footer on this page.
+   ========================================================= */
+
+/* ---------- Design tokens ---------- */
+:root {
+    --bg: #F5EFE6;
+    --surface: #D8C3A5;
+    --primary: #A47551;
+    --secondary: #71816A;
+    --text: #3B3028;
+    --text-soft: #71816A;
+
+    --on-primary: #FFFFFF;
+    --on-secondary: #FFFFFF;
+    --bg-alt: color-mix(in srgb, var(--surface) 28%, var(--bg));
+    --border: color-mix(in srgb, var(--text) 14%, transparent);
+    --shadow: 0 10px 30px rgba(59, 48, 40, .12);
+    --shadow-lg: 0 22px 50px rgba(59, 48, 40, .2);
+    --danger: #B4533A;
+
+    --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-head: "Playfair Display", Georgia, serif;
+
+    --radius: 16px;
+    --control-h: 46px;
+    --field-h: 52px;
+    --ease: cubic-bezier(.22, .8, .24, 1);
+}
+
+[data-theme="dark"] {
+    --bg: #171713;
+    --surface: #292821;
+    --primary: #C39A6B;
+    --secondary: #9AAA8B;
+    --text: #F1E5D4;
+    --text-soft: #9AAA8B;
+
+    --on-primary: #171713;
+    --on-secondary: #171713;
+    --bg-alt: color-mix(in srgb, var(--surface) 55%, var(--bg));
+    --border: color-mix(in srgb, var(--text) 16%, transparent);
+    --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    --shadow-lg: 0 22px 50px rgba(0, 0, 0, .5);
+    --danger: #E48A70;
+}
+
+/* ---------- Reset / base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg-alt);
+    transition: background-color .4s var(--ease), color .4s var(--ease);
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-head);
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 600;
+}
+
+p {
+    margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+/* Icons (Lucide) */
+.icon {
+    width: 22px;
+    height: 22px;
+    stroke-width: 1.75;
+}
+
+.icon-sm {
+    width: 18px;
+    height: 18px;
+    stroke-width: 1.9;
+    flex-shrink: 0;
+}
+
+[dir="rtl"] .flip {
+    transform: scaleX(-1);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: var(--field-h);
+    padding-inline: 26px;
+    border-radius: 999px;
+    border: 1.5px solid transparent;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .01em;
+    white-space: nowrap;
+    transition: background-color .3s var(--ease), color .3s var(--ease),
+        border-color .3s var(--ease), transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+
+.btn:active {
+    transform: translateY(1px) scale(.99);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--on-primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--on-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary);
+    color: var(--on-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+[data-theme="light"] .eyebrow {
+    color: #7A5333;
+}
+
+/* ---------- Brand (logo + name, links to home) ---------- */
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--primary);
+    color: var(--on-primary);
+    transition: background-color .3s var(--ease), transform .4s var(--ease);
+}
+
+.brand-logo {
+    object-fit: contain;
+    background: transparent;
+    border-radius: 0;
+}
+
+.brand:hover .brand-mark {
+    transform: rotate(-6deg);
+}
+
+.brand:hover .brand-logo {
+    background: transparent;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.brand-name {
+    font-family: var(--font-head);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .01em;
+    color: var(--primary);
+    transition: color .3s var(--ease);
+}
+
+.brand:hover .brand-name {
+    color: var(--secondary);
+}
+
+.brand-tag {
+    margin-top: 2px;
+    font-size: 11px;
+    letter-spacing: .04em;
+    color: var(--text-soft);
+}
+
+/* ---------- Icon buttons (RTL + dark mode) ---------- */
+.icon-btn {
+    display: grid;
+    place-items: center;
+    width: var(--control-h);
+    height: var(--control-h);
+    border-radius: 50%;
+    border: 1.5px solid var(--secondary);
+    background: transparent;
+    color: var(--text);
+    transition: background-color .3s var(--ease), color .3s var(--ease), transform .3s var(--ease);
+}
+
+.icon-btn:hover {
+    background: var(--secondary);
+    color: var(--on-secondary);
+    transform: translateY(-2px);
+}
+
+.icon-btn .icon {
+    grid-area: 1 / 1;
+}
+
+.icon-sun {
+    display: none;
+}
+
+[data-theme="dark"] .icon-sun {
+    display: block;
+}
+
+[data-theme="dark"] .icon-moon {
+    display: none;
+}
+
+/* ---------- Background ---------- */
+.vs-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    background:
+        radial-gradient(900px 500px at 90% 5%, color-mix(in srgb, var(--primary) 16%, transparent), transparent 70%),
+        radial-gradient(800px 480px at 5% 95%, color-mix(in srgb, var(--secondary) 18%, transparent), transparent 70%),
+        var(--bg-alt);
+}
+
+.vs-blob {
+    position: absolute;
+    border-radius: 50%;
+    border: 1.5px dashed color-mix(in srgb, var(--primary) 40%, transparent);
+}
+
+.vs-blob-1 {
+    width: 420px;
+    height: 420px;
+    right: -140px;
+    top: 12%;
+    animation: vsSpin 60s linear infinite;
+}
+
+.vs-blob-2 {
+    width: 300px;
+    height: 300px;
+    left: -100px;
+    bottom: 8%;
+    animation: vsSpin 80s linear infinite reverse;
+}
+
+/* ---------- Page + card ---------- */
+.vs-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding: 40px 16px;
+}
+
+.vs-card {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    padding: 28px 40px 40px;
+    border-radius: 28px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    box-shadow: var(--shadow-lg);
+    animation: vsRise .8s var(--ease) both;
+}
+
+[data-theme="dark"] .vs-card {
+    background: var(--surface);
+}
+
+/* Logo left, tools always top-right (even in RTL) */
+.vs-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    direction: ltr;
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.vs-tools {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.vs-head {
+    margin-bottom: 28px;
+}
+
+.vs-head h1 {
+    font-size: clamp(28px, 5vw, 36px);
+    margin-bottom: 10px;
+}
+
+.vs-head>p {
+    color: color-mix(in srgb, var(--text) 78%, transparent);
+}
+
+.vs-meta {
+    display: grid;
+    gap: 8px;
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: var(--bg-alt);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+[data-theme="dark"] .vs-meta {
+    background: var(--bg);
+}
+
+.vs-meta li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vs-meta .icon-sm {
+    color: var(--primary);
+}
+
+/* ---------- Form: one field after another, all full width ---------- */
+.vs-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vs-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.vs-field>label:not(.vs-check-label) {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.vs-opt {
+    font-weight: 400;
+    opacity: .65;
+}
+
+.vs-field input[type="text"],
+.vs-field input[type="email"],
+.vs-field input[type="tel"],
+.vs-field input[type="date"],
+.vs-field select,
+.vs-field textarea {
+    display: block;
+    width: 100%;
+    height: var(--field-h);
+    padding: 0 18px;
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    background: var(--bg);
+    outline: 0;
+    font-size: 15px;
+    transition: border-color .3s var(--ease), box-shadow .3s var(--ease), background-color .3s;
+}
+
+[data-theme="dark"] .vs-field input[type="text"],
+[data-theme="dark"] .vs-field input[type="email"],
+[data-theme="dark"] .vs-field input[type="tel"],
+[data-theme="dark"] .vs-field input[type="date"],
+[data-theme="dark"] .vs-field select,
+[data-theme="dark"] .vs-field textarea {
+    background: var(--bg);
+}
+
+.vs-field input[type="date"] {
+    color-scheme: light;
+}
+
+[data-theme="dark"] .vs-field input[type="date"] {
+    color-scheme: dark;
+}
+
+.vs-field textarea {
+    height: auto;
+    min-height: 120px;
+    padding: 14px 18px;
+    resize: vertical;
+}
+
+.vs-field input::placeholder,
+.vs-field textarea::placeholder {
+    color: color-mix(in srgb, var(--text) 50%, transparent);
+}
+
+.vs-field input:hover,
+.vs-field select:hover,
+.vs-field textarea:hover {
+    border-color: color-mix(in srgb, var(--primary) 55%, transparent);
+}
+
+.vs-field input:focus,
+.vs-field select:focus,
+.vs-field textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 18%, transparent);
+}
+
+/* Select with custom chevron */
+.vs-select {
+    position: relative;
+    width: 100%;
+}
+
+.vs-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-inline-end: 48px;
+    cursor: pointer;
+}
+
+.vs-select select:invalid {
+    color: color-mix(in srgb, var(--text) 50%, transparent);
+}
+
+.vs-select select option {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.vs-select .icon-sm {
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 18px;
+    margin-top: -9px;
+    color: var(--primary);
+    pointer-events: none;
+}
+
+/* Errors */
+.vs-err {
+    display: block;
+    padding-inline: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--danger);
+}
+
+.vs-err:empty {
+    display: none;
+}
+
+.vs-field.has-error input,
+.vs-field.has-error select,
+.vs-field.has-error textarea {
+    border-color: var(--danger);
+    animation: vsShake .4s var(--ease);
+}
+
+.vs-field.has-error input:focus,
+.vs-field.has-error select:focus {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--danger) 18%, transparent);
+}
+
+/* Checkbox */
+.vs-check-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.vs-check-label input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.vs-check-box {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1.5px solid var(--secondary);
+    color: transparent;
+    transition: background-color .3s var(--ease), color .3s var(--ease), transform .3s var(--ease), border-color .3s;
+}
+
+.vs-check-label:hover .vs-check-box {
+    transform: scale(1.1);
+}
+
+.vs-check-label input:checked+.vs-check-box {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--on-primary);
+}
+
+.vs-check-label input:focus-visible+.vs-check-box {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.vs-field.has-error .vs-check-box {
+    border-color: var(--danger);
+}
+
+/* CTA: same width as the input fields */
+.vs-cta {
+    display: flex;
+    width: 100%;
+    height: var(--field-h);
+}
+
+.vs-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 13px;
+    text-align: center;
+    opacity: .7;
+}
+
+/* ---------- Success state ---------- */
+.vs-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+    padding-block: 8px 0;
+    outline: 0;
+}
+
+.vs-success[hidden] {
+    display: none;
+}
+
+.vs-success:not([hidden]) {
+    animation: vsRise .7s var(--ease);
+}
+
+.vs-tick {
+    width: 90px;
+    height: 90px;
+}
+
+.vs-tick circle {
+    stroke: var(--secondary);
+    stroke-width: 2.5;
+    stroke-dasharray: 152;
+    stroke-dashoffset: 152;
+    animation: vsDraw .8s var(--ease) .1s forwards;
+}
+
+.vs-tick path {
+    stroke: var(--primary);
+    stroke-width: 3.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    animation: vsDraw .5s var(--ease) .7s forwards;
+}
+
+.vs-success h2 {
+    font-size: 28px;
+}
+
+.vs-success>p {
+    max-width: 380px;
+    color: color-mix(in srgb, var(--text) 78%, transparent);
+}
+
+.vs-summary {
+    display: grid;
+    gap: 8px;
+    width: 100%;
+    margin: 6px 0 10px;
+    padding: 16px 18px;
+    border-radius: 16px;
+    background: var(--bg-alt);
+    text-align: start;
+    font-size: 14px;
+}
+
+[data-theme="dark"] .vs-summary {
+    background: var(--bg);
+}
+
+.vs-summary li {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.vs-summary span {
+    opacity: .7;
+}
+
+.vs-summary strong {
+    font-weight: 600;
+    text-align: end;
+}
+
+/* ---------- Back link ---------- */
+.vs-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    transition: gap .3s var(--ease), color .3s var(--ease);
+}
+
+.vs-back:hover {
+    gap: 14px;
+    color: var(--primary);
+}
+
+[data-theme="light"] .vs-back:hover {
+    color: #7A5333;
+}
+
+/* ---------- Animations ---------- */
+@keyframes vsRise {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes vsSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes vsShake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes vsDraw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition-duration: .01ms !important;
+    }
+
+    .vs-tick circle,
+    .vs-tick path {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 560px) {
+    .vs-page {
+        padding: 20px 12px 32px;
+        justify-content: flex-start;
+    }
+
+    .vs-card {
+        padding: 22px 20px 30px;
+        border-radius: 22px;
+    }
+
+    .brand-mark {
+        width: 46px;
+        height: 46px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    .brand-tag {
+        font-size: 9px;
+    }
+
+    .icon-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .vs-tools {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .brand-tag {
+        display: none;
+    }
+
+    .brand {
+        gap: 8px;
+    }
+
+    .brand-mark {
+        width: 40px;
+        height: 40px;
+    }
+}

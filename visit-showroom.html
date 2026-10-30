@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit the Showroom | UrbanHaven</title>
+  <meta name="description" content="Book a relaxed visit to the UrbanHaven showroom. Choose a date and time and a designer will be ready to welcome you." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="visit-showroom.css" />
+</head>
+<body>
+
+  <!-- Decorative background (no navbar or footer on this page) -->
+  <div class="vs-bg" aria-hidden="true">
+    <span class="vs-blob vs-blob-1"></span>
+    <span class="vs-blob vs-blob-2"></span>
+  </div>
+
+  <main class="vs-page">
+    <section class="vs-card" id="vsCard" aria-labelledby="vsTitle">
+
+      <!-- Top row: logo (left) + RTL / dark mode icons (always top-right) -->
+      <div class="vs-top">
+        <a class="brand" href="index.html" aria-label="UrbanHaven, go to home page">
+          <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+          <span class="brand-text">
+            <span class="brand-name">UrbanHaven</span>
+            <span class="brand-tag">Furniture for Modern Living</span>
+          </span>
+        </a>
+
+        <div class="vs-tools">
+          <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle right-to-left layout">
+            <i data-lucide="arrow-left-right" class="icon"></i>
+          </button>
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <i data-lucide="moon" class="icon icon-moon"></i>
+            <i data-lucide="sun" class="icon icon-sun"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Booking form -->
+      <div class="vs-body" id="vsFormWrap">
+        <header class="vs-head">
+          <span class="eyebrow"><i data-lucide="armchair" class="icon-sm"></i> Visit the Showroom</span>
+          <h1 id="vsTitle">Book your showroom visit</h1>
+          <p>Pick a time that suits you and a designer will be ready to welcome you.</p>
+
+          <ul class="vs-meta">
+            <li><i data-lucide="map-pin" class="icon-sm"></i> 24 Heritage Lane, Design District</li>
+            <li><i data-lucide="clock" class="icon-sm"></i> Open daily, 10:00 AM to 8:00 PM</li>
+          </ul>
+        </header>
+
+        <form class="vs-form" id="visitForm" novalidate>
+
+          <div class="vs-field">
+            <label for="vFirst">First name</label>
+            <input type="text" id="vFirst" name="firstName" placeholder="Enter your first name" autocomplete="given-name" required />
+            <span class="vs-err" id="errFirst" aria-live="polite"></span>
+          </div>
+
+          <div class="vs-field">
+            <label for="vLast">Last name</label>
+            <input type="text" id="vLast" name="lastName" placeholder="Enter your last name" autocomplete="family-name" required />
+            <span class="vs-err" id="errLast" aria-live="polite"></span>
+          </div>
+
+          <div class="vs-field">
+            <label for="vEmail">Email address</label>
+            <input type="email" id="vEmail" name="email" placeholder="you@example.com" autocomplete="email" required />
+            <span class="vs-err" id="errEmail" aria-live="polite"></span>
+          </div>
+
+          <div class="vs-field">
+            <label for="vPhone">Phone number</label>
+            <input type="tel" id="vPhone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" required />
+            <span class="vs-err" id="errPhone" aria-live="polite"></span>
+          </div>
+
+          <div class="vs-field">
+            <label for="vDate">Preferred date</label>
+            <input type="date" id="vDate" name="date" required />
+            <span class="vs-err" id="errDate" aria-live="polite"></span>
+          </div>
+
+          <div class="vs-field">
+            <label for="vTime">Preferred time</label>
+            <div class="vs-select">
+              <select id="vTime" name="time" required>
+                <option value="" selected disabled>Choose a date first</option>
+              </select>
+              <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i>
+            </div>
+            <span class="vs-err" id="errTime" aria-live="polite"></span>
+          </div>
+
+          <div class="vs-field">
+            <label for="vGuests">Number of visitors</label>
+            <div class="vs-select">
+              <select id="vGuests" name="guests" required>
+                <option value="" selected disabled>Select number of visitors</option>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5+">5 or more</option>
+              </select>
+              <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i>
+            </div>
+            <span class="vs-err" id="errGuests" aria-live="polite"></span>
+          </div>
+
+          <div class="vs-field">
+            <label for="vInterest">What are you looking for?</label>
+            <div class="vs-select">
+              <select id="vInterest" name="interest" required>
+                <option value="" selected disabled>Choose an area of interest</option>
+                <option>Living room</option>
+                <option>Bedroom</option>
+                <option>Dining</option>
+                <option>Home office</option>
+                <option>Decor accessories</option>
+                <option>Full home furnishing</option>
+              </select>
+              <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i>
+            </div>
+            <span class="vs-err" id="errInterest" aria-live="polite"></span>
+          </div>
+
+          <div class="vs-field">
+            <label for="vNotes">Anything we should know? <span class="vs-opt">(optional)</span></label>
+            <textarea id="vNotes" name="notes" rows="4" placeholder="Room sizes, style ideas, budget or anything else"></textarea>
+          </div>
+
+          <div class="vs-field vs-check">
+            <label class="vs-check-label" for="vConsent">
+              <input type="checkbox" id="vConsent" name="consent" required />
+              <span class="vs-check-box"><i data-lucide="check" class="icon-sm"></i></span>
+              <span>I agree to be contacted to confirm my visit.</span>
+            </label>
+            <span class="vs-err" id="errConsent" aria-live="polite"></span>
+          </div>
+
+          <!-- CTA is full width, exactly matching the input fields -->
+          <button type="submit" class="btn btn-primary vs-cta">
+            Book My Visit <i data-lucide="calendar-check" class="icon-sm"></i>
+          </button>
+
+          <p class="vs-note"><i data-lucide="lock" class="icon-sm"></i> Your details stay private and are only used for this booking.</p>
+        </form>
+      </div>
+
+      <!-- Success state -->
+      <div class="vs-success" id="vsSuccess" tabindex="-1" aria-live="polite" hidden>
+        <svg class="vs-tick" viewBox="0 0 52 52" aria-hidden="true">
+          <circle cx="26" cy="26" r="24" fill="none" />
+          <path fill="none" d="M15 27l8 8 14-16" />
+        </svg>
+        <h2>Your visit is requested!</h2>
+        <p id="vsSuccessMsg">Thank you. We will confirm your visit shortly.</p>
+
+        <ul class="vs-summary" id="vsSummary"></ul>
+
+        <a href="index.html" class="btn btn-primary vs-cta">Back to Home</a>
+        <button type="button" class="btn btn-secondary vs-cta" id="vsAgain">Book Another Visit</button>
+      </div>
+    </section>
+
+    <a href="index.html" class="vs-back"><i data-lucide="arrow-left" class="icon-sm flip"></i> Back to home page</a>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="visit-showroom.js"></script>
+</body>
+</html>

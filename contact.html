@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | UrbanHaven</title>
+  <meta name="description" content="Get in touch with UrbanHaven. Call, email or visit our showroom, book a design consultation, or send us a message." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html" aria-label="UrbanHaven home">
+        <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+        <span class="brand-text">
+          <span class="brand-name">UrbanHaven</span>
+          <span class="brand-tag">Furniture for Modern Living</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li class="nav-dropdown">
+            <details>
+              <summary class="nav-dropdown-toggle">Home <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i></summary>
+              <div class="nav-dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="home2-premium.html">Home 2 Premium</a>
+              </div>
+            </details>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="decor.html">Decor Accessories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-cta"><a href="visit-showroom.html" class="btn btn-primary">Visit Showroom</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="icon icon-moon"></i>
+          <i data-lucide="sun" class="icon icon-sun"></i>
+        </button>
+        <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle right-to-left layout">
+          <i data-lucide="arrow-left-right" class="icon"></i>
+        </button>
+        <a href="visit-showroom.html" class="btn btn-primary header-cta">Visit Showroom</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <i data-lucide="menu" class="icon icon-menu"></i>
+          <i data-lucide="x" class="icon icon-close"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO (expanding contact tiles) ============ -->
+    <section class="ct-hero" id="top">
+      <span class="ct-ring ct-ring-1" aria-hidden="true"></span>
+      <span class="ct-ring ct-ring-2" aria-hidden="true"></span>
+      <span class="ct-ring ct-ring-3" aria-hidden="true"></span>
+
+      <div class="container ct-hero-wrap">
+        <div class="ct-hero-top">
+          <div class="ct-hero-copy">
+            <span class="eyebrow ct-in" style="--i:0"><i data-lucide="message-circle-heart" class="icon-sm"></i> Contact Us</span>
+            <h1 class="ct-in" style="--i:1">Let's talk about your <em>dream home</em>.</h1>
+            <p class="ct-lead ct-in" style="--i:2">
+              Questions, ideas or a space you can't quite figure out? Reach us the way you like best,
+              and a real designer will get back to you.
+            </p>
+          </div>
+
+          <div class="ct-hero-meta ct-in" style="--i:3">
+            <span class="ct-status" id="ctStatus">
+              <span class="ct-status-dot" aria-hidden="true"></span>
+              <span id="ctStatusText">Open daily, 10:00 AM to 8:00 PM</span>
+            </span>
+            <span class="ct-reply"><i data-lucide="zap" class="icon-sm"></i> Replies within 24 hours</span>
+          </div>
+        </div>
+
+        <div class="ct-tiles" id="ctTiles">
+          <a href="tel:+919876543210" class="ct-tile is-open ct-in" style="--i:3">
+            <span class="ct-tile-no">01</span>
+            <span class="ct-tile-icon"><i data-lucide="phone" class="icon"></i></span>
+            <div class="ct-tile-body">
+              <h3>Call us</h3>
+              <strong>+91 98765 43210</strong>
+              <p class="ct-tile-more">Speak to a designer any day between 10 AM and 8 PM.</p>
+            </div>
+            <span class="ct-tile-go"><i data-lucide="arrow-up-right" class="icon"></i></span>
+          </a>
+
+          <a href="mailto:hello@urbanhaven.com" class="ct-tile ct-in" style="--i:4">
+            <span class="ct-tile-no">02</span>
+            <span class="ct-tile-icon"><i data-lucide="mail" class="icon"></i></span>
+            <div class="ct-tile-body">
+              <h3>Email us</h3>
+              <strong>hello@urbanhaven.com</strong>
+              <p class="ct-tile-more">Share photos, floor plans or ideas. We reply within a day.</p>
+            </div>
+            <span class="ct-tile-go"><i data-lucide="arrow-up-right" class="icon"></i></span>
+          </a>
+
+          <a href="#map" class="ct-tile ct-in" style="--i:5">
+            <span class="ct-tile-no">03</span>
+            <span class="ct-tile-icon"><i data-lucide="map-pin" class="icon"></i></span>
+            <div class="ct-tile-body">
+              <h3>Visit the showroom</h3>
+              <strong>24 Heritage Lane, Design District</strong>
+              <p class="ct-tile-more">Walk-ins are always welcome, with free parking on site.</p>
+            </div>
+            <span class="ct-tile-go"><i data-lucide="arrow-up-right" class="icon"></i></span>
+          </a>
+
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="ct-tile ct-in" style="--i:6">
+            <span class="ct-tile-no">04</span>
+            <span class="ct-tile-icon"><i data-lucide="message-circle" class="icon"></i></span>
+            <div class="ct-tile-body">
+              <h3>Chat on WhatsApp</h3>
+              <strong>+91 98765 43210</strong>
+              <p class="ct-tile-more">Quick answers on products, prices and delivery times.</p>
+            </div>
+            <span class="ct-tile-go"><i data-lucide="arrow-up-right" class="icon"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. MESSAGE FORM ============ -->
+    <section class="section" id="form">
+      <div class="container ct-split">
+
+        <div class="ct-form-card reveal" id="ctFormCard">
+          <div class="ct-form-head">
+            <span class="eyebrow">Send a Message</span>
+            <h2>Tell us what you have in mind</h2>
+            <p>Fill in the form and our team will reply within one working day.</p>
+          </div>
+
+          <form class="ct-form" id="contactForm" novalidate>
+            <div class="ct-field">
+              <input type="text" id="cName" name="name" placeholder=" " autocomplete="name" required />
+              <label for="cName">Full name</label>
+              <span class="ct-err" id="errName" aria-live="polite"></span>
+            </div>
+
+            <div class="ct-field">
+              <input type="email" id="cEmail" name="email" placeholder=" " autocomplete="email" required />
+              <label for="cEmail">Email address</label>
+              <span class="ct-err" id="errEmail" aria-live="polite"></span>
+            </div>
+
+            <div class="ct-field">
+              <input type="tel" id="cPhone" name="phone" placeholder=" " autocomplete="tel" />
+              <label for="cPhone">Phone (optional)</label>
+              <span class="ct-err" id="errPhone" aria-live="polite"></span>
+            </div>
+
+            <div class="ct-field ct-select">
+              <select id="cTopic" name="topic" required>
+                <option value="" disabled selected hidden></option>
+                <option>Design consultation</option>
+                <option>Product enquiry</option>
+                <option>Custom furniture</option>
+                <option>Delivery &amp; support</option>
+                <option>Something else</option>
+              </select>
+              <label for="cTopic">What can we help with?</label>
+              <i data-lucide="chevron-down" class="icon-sm ct-select-icon" aria-hidden="true"></i>
+              <span class="ct-err" id="errTopic" aria-live="polite"></span>
+            </div>
+
+            <div class="ct-field ct-full">
+              <textarea id="cMessage" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="cMessage">Your message</label>
+              <span class="ct-err" id="errMessage" aria-live="polite"></span>
+            </div>
+
+            <div class="ct-field ct-full ct-check">
+              <label class="ct-check-label" for="cConsent">
+                <input type="checkbox" id="cConsent" name="consent" required />
+                <span class="ct-check-box"><i data-lucide="check" class="icon-sm"></i></span>
+                <span>I agree to be contacted about my enquiry.</span>
+              </label>
+              <span class="ct-err" id="errConsent" aria-live="polite"></span>
+            </div>
+
+            <div class="ct-full ct-actions">
+              <button type="submit" class="btn btn-primary">Send Message <i data-lucide="send" class="icon-sm flip"></i></button>
+              <span class="ct-note"><i data-lucide="lock" class="icon-sm"></i> Your details stay private.</span>
+            </div>
+          </form>
+
+          <div class="ct-success" id="ctSuccess" tabindex="-1" aria-live="polite">
+            <svg class="ct-tick" viewBox="0 0 52 52" aria-hidden="true">
+              <circle cx="26" cy="26" r="24" fill="none" />
+              <path fill="none" d="M15 27l8 8 14-16" />
+            </svg>
+            <h3>Message sent. Thank you!</h3>
+            <p>We have received your enquiry and will reply within one working day.</p>
+            <button type="button" class="btn btn-secondary" id="ctAgain">Send another message</button>
+          </div>
+        </div>
+
+        <aside class="ct-side reveal" style="--d:.15s">
+          <div class="ct-side-img">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80" alt="Inside the UrbanHaven showroom" loading="lazy" />
+            <div class="ct-side-cap">
+              <strong>Prefer to talk it through?</strong>
+              <span>Our designers love a good conversation.</span>
+            </div>
+          </div>
+
+          <ul class="ct-points">
+            <li>
+              <span class="ct-points-icon"><i data-lucide="clock-3" class="icon-sm"></i></span>
+              <div><strong>Fast replies</strong><small>Usually within a few hours on working days.</small></div>
+            </li>
+            <li>
+              <span class="ct-points-icon"><i data-lucide="compass" class="icon-sm"></i></span>
+              <div><strong>Free first consultation</strong><small>Plan your layout and palette with a designer.</small></div>
+            </li>
+            <li>
+              <span class="ct-points-icon"><i data-lucide="shield-check" class="icon-sm"></i></span>
+              <div><strong>No pressure, ever</strong><small>Honest advice, whatever your budget.</small></div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 3. FIND THE SHOWROOM (map) ============ -->
+    <section class="section section-alt" id="map">
+      <div class="container ct-visit">
+
+        <div class="ct-visit-copy">
+          <span class="eyebrow reveal">Find the Showroom</span>
+          <h2 class="reveal" style="--d:.1s">Come and see it in person</h2>
+          <p class="reveal" style="--d:.2s">
+            Our showroom is in the heart of the Design District, a short walk from the main
+            square. Sit on the sofas, feel the fabrics and talk to a designer face to face.
+          </p>
+
+          <ul class="ct-info reveal" style="--d:.3s">
+            <li><i data-lucide="map-pin" class="icon-sm"></i> 24 Heritage Lane, Design District</li>
+            <li><i data-lucide="car" class="icon-sm"></i> Free parking behind the building</li>
+            <li><i data-lucide="accessibility" class="icon-sm"></i> Step-free access to every floor</li>
+            <li><i data-lucide="phone" class="icon-sm"></i> +91 98765 43210</li>
+          </ul>
+
+          <div class="btn-row reveal" style="--d:.4s">
+            <a href="https://www.google.com/maps/search/?api=1&query=24+Heritage+Lane+Design+District" target="_blank" rel="noopener" class="btn btn-primary">Get Directions <i data-lucide="navigation" class="icon-sm"></i></a>
+            <a href="tel:+919876543210" class="btn btn-secondary">Call Ahead</a>
+          </div>
+        </div>
+
+        <div class="ct-map reveal" style="--d:.15s" role="img" aria-label="Illustrated map showing the UrbanHaven showroom location">
+          <span class="ct-park ct-park-1"></span>
+          <span class="ct-park ct-park-2"></span>
+          <span class="ct-road ct-road-h1"></span>
+          <span class="ct-road ct-road-h2"></span>
+          <span class="ct-road ct-road-v1"></span>
+          <span class="ct-road ct-road-v2"></span>
+          <span class="ct-road ct-road-d"></span>
+          <span class="ct-street ct-street-1">Heritage Lane</span>
+          <span class="ct-street ct-street-2">Market Road</span>
+
+          <div class="ct-pin">
+            <span class="ct-pin-ping"></span>
+            <span class="ct-pin-ping ct-pin-ping-2"></span>
+            <span class="ct-pin-icon"><i data-lucide="armchair" class="icon"></i></span>
+            <div class="ct-pin-label">
+              <strong>UrbanHaven</strong>
+              <small>Showroom</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. HOURS ============ -->
+    <section class="section" id="hours">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Opening Hours</span>
+          <h2>When we're here for you</h2>
+          <p>Every day of the week, with extended hours for calls and chat support.</p>
+        </div>
+
+        <div class="ct-day reveal" dir="ltr" id="ctDay">
+          <div class="ct-day-ticks" aria-hidden="true">
+            <span></span>
+            <div class="ct-ticks">
+              <b style="--h:8">8 AM</b><b style="--h:10">10 AM</b><b style="--h:12">12 PM</b><b style="--h:14">2 PM</b>
+              <b style="--h:16">4 PM</b><b style="--h:18">6 PM</b><b style="--h:20">8 PM</b><b style="--h:22">10 PM</b>
+            </div>
+          </div>
+
+          <div class="ct-day-row">
+            <span class="ct-day-label"><i data-lucide="store" class="icon-sm"></i> Showroom</span>
+            <div class="ct-track"><span class="ct-bar" style="--s:10;--e:20"><em>10 AM to 8 PM</em></span></div>
+          </div>
+          <div class="ct-day-row">
+            <span class="ct-day-label"><i data-lucide="compass" class="icon-sm"></i> Design consultations</span>
+            <div class="ct-track"><span class="ct-bar ct-bar-b" style="--s:11;--e:19"><em>11 AM to 7 PM</em></span></div>
+          </div>
+          <div class="ct-day-row">
+            <span class="ct-day-label"><i data-lucide="headset" class="icon-sm"></i> Phone &amp; chat support</span>
+            <div class="ct-track"><span class="ct-bar" style="--s:9;--e:21"><em>9 AM to 9 PM</em></span></div>
+          </div>
+          <div class="ct-day-row">
+            <span class="ct-day-label"><i data-lucide="truck" class="icon-sm"></i> Delivery slots</span>
+            <div class="ct-track"><span class="ct-bar ct-bar-b" style="--s:9;--e:18"><em>9 AM to 6 PM</em></span></div>
+          </div>
+
+          <div class="ct-now" id="ctNow" aria-hidden="true"><span>Now</span></div>
+        </div>
+
+        <div class="grid ct-expect">
+          <article class="ct-expect-card tap-card reveal" style="--d:.05s">
+            <span class="ct-expect-icon"><i data-lucide="coffee" class="icon"></i></span>
+            <h3>A relaxed welcome</h3>
+            <p>Take your time with a cup of tea. No hard sell, just helpful hosts.</p>
+          </article>
+          <article class="ct-expect-card tap-card reveal" style="--d:.15s">
+            <span class="ct-expect-icon"><i data-lucide="swatch-book" class="icon"></i></span>
+            <h3>Fabrics &amp; finishes</h3>
+            <p>Touch every swatch and compare woods in natural daylight.</p>
+          </article>
+          <article class="ct-expect-card tap-card reveal" style="--d:.25s">
+            <span class="ct-expect-icon"><i data-lucide="ruler" class="icon"></i></span>
+            <h3>Room planning</h3>
+            <p>Bring measurements or photos and plan the layout with a designer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. CONSULTATION STEPS ============ -->
+    <section class="section section-alt" id="steps">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Book a Consultation</span>
+          <h2>Three easy steps to a plan you love</h2>
+          <p>From first message to a clear, costed design in a few days.</p>
+        </div>
+
+        <div class="grid ct-steps">
+          <article class="ct-step tap-card reveal" style="--d:.05s">
+            <span class="ct-step-no">1</span>
+            <span class="ct-step-icon"><i data-lucide="calendar-check" class="icon"></i></span>
+            <h3>Pick a time</h3>
+            <p>Send us a message or call, and choose a slot that suits you, in the showroom or online.</p>
+          </article>
+          <article class="ct-step tap-card reveal" style="--d:.15s">
+            <span class="ct-step-no">2</span>
+            <span class="ct-step-icon"><i data-lucide="users" class="icon"></i></span>
+            <h3>Meet your designer</h3>
+            <p>Talk through your space, style and budget. Bring photos, measurements and inspiration.</p>
+          </article>
+          <article class="ct-step tap-card reveal" style="--d:.25s">
+            <span class="ct-step-no">3</span>
+            <span class="ct-step-icon"><i data-lucide="file-check" class="icon"></i></span>
+            <h3>Get your plan</h3>
+            <p>Receive a layout, moodboard and clear quote within a few working days.</p>
+          </article>
+        </div>
+
+        <div class="ct-center reveal">
+          <a href="#form" class="btn btn-primary">Book Your Consultation <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. DEPARTMENTS ============ -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Right Person, First Time</span>
+          <h2>Reach the team you need</h2>
+          <p>Go straight to the department that can help. Tap the copy button to save an address.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="ct-dept tap-card reveal" style="--d:.05s">
+            <span class="ct-dept-icon"><i data-lucide="shopping-bag" class="icon"></i></span>
+            <h3>Sales</h3>
+            <p>Product questions, quotes and availability.</p>
+            <div class="ct-dept-line">
+              <span>sales@urbanhaven.com</span>
+              <button type="button" class="ct-copy" data-copy="sales@urbanhaven.com" data-label="Sales email" aria-label="Copy sales email"><i data-lucide="copy" class="icon-sm"></i></button>
+            </div>
+          </article>
+
+          <article class="ct-dept tap-card reveal" style="--d:.15s">
+            <span class="ct-dept-icon"><i data-lucide="pencil-ruler" class="icon"></i></span>
+            <h3>Design Studio</h3>
+            <p>Consultations, space planning and custom builds.</p>
+            <div class="ct-dept-line">
+              <span>design@urbanhaven.com</span>
+              <button type="button" class="ct-copy" data-copy="design@urbanhaven.com" data-label="Design email" aria-label="Copy design email"><i data-lucide="copy" class="icon-sm"></i></button>
+            </div>
+          </article>
+
+          <article class="ct-dept tap-card reveal" style="--d:.25s">
+            <span class="ct-dept-icon"><i data-lucide="headset" class="icon"></i></span>
+            <h3>Customer Care</h3>
+            <p>Deliveries, warranty claims and after-sales help.</p>
+            <div class="ct-dept-line">
+              <span>care@urbanhaven.com</span>
+              <button type="button" class="ct-copy" data-copy="care@urbanhaven.com" data-label="Care email" aria-label="Copy care email"><i data-lucide="copy" class="icon-sm"></i></button>
+            </div>
+          </article>
+
+          <article class="ct-dept tap-card reveal" style="--d:.35s">
+            <span class="ct-dept-icon"><i data-lucide="briefcase" class="icon"></i></span>
+            <h3>Careers</h3>
+            <p>Join our team of makers, designers and hosts.</p>
+            <div class="ct-dept-line">
+              <span>careers@urbanhaven.com</span>
+              <button type="button" class="ct-copy" data-copy="careers@urbanhaven.com" data-label="Careers email" aria-label="Copy careers email"><i data-lucide="copy" class="icon-sm"></i></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. FAQ ============ -->
+    <section class="section section-alt" id="faq">
+      <div class="container ct-faq">
+
+        <div class="ct-faq-side">
+          <span class="eyebrow reveal">FAQ</span>
+          <h2 class="reveal" style="--d:.1s">Quick answers to common questions</h2>
+          <p class="reveal" style="--d:.2s">Can't find what you're looking for? Send us a message and we'll be happy to help.</p>
+          <a href="#form" class="btn btn-secondary reveal" style="--d:.3s">Ask a Question</a>
+        </div>
+
+        <div class="ct-faq-list reveal" style="--d:.15s">
+          <div class="ct-faq-item is-open">
+            <h3><button class="ct-faq-q" type="button" id="q1" aria-expanded="true" aria-controls="a1">Do I need an appointment to visit? <i data-lucide="plus" class="icon-sm"></i></button></h3>
+            <div class="ct-faq-a" id="a1" role="region" aria-labelledby="q1"><div><p>Walk-ins are always welcome. If you'd like a designer to yourself, book an appointment and we'll reserve a time just for you.</p></div></div>
+          </div>
+          <div class="ct-faq-item">
+            <h3><button class="ct-faq-q" type="button" id="q2" aria-expanded="false" aria-controls="a2">How quickly will you reply to my message? <i data-lucide="plus" class="icon-sm"></i></button></h3>
+            <div class="ct-faq-a" id="a2" role="region" aria-labelledby="q2"><div><p>We reply to every message within one working day, and usually much sooner. Calls and WhatsApp are answered during support hours.</p></div></div>
+          </div>
+          <div class="ct-faq-item">
+            <h3><button class="ct-faq-q" type="button" id="q3" aria-expanded="false" aria-controls="a3">Is the design consultation really free? <i data-lucide="plus" class="icon-sm"></i></button></h3>
+            <div class="ct-faq-a" id="a3" role="region" aria-labelledby="q3"><div><p>Yes. Your first consultation is complimentary, with no obligation to buy. You'll leave with ideas and a clearer plan either way.</p></div></div>
+          </div>
+          <div class="ct-faq-item">
+            <h3><button class="ct-faq-q" type="button" id="q4" aria-expanded="false" aria-controls="a4">Can you make furniture to my measurements? <i data-lucide="plus" class="icon-sm"></i></button></h3>
+            <div class="ct-faq-a" id="a4" role="region" aria-labelledby="q4"><div><p>Absolutely. Sofas, wardrobes, tables and more can be made to measure in your choice of finish and fabric. Share your dimensions and we'll advise on timelines.</p></div></div>
+          </div>
+          <div class="ct-faq-item">
+            <h3><button class="ct-faq-q" type="button" id="q5" aria-expanded="false" aria-controls="a5">Do you deliver and assemble? <i data-lucide="plus" class="icon-sm"></i></button></h3>
+            <div class="ct-faq-a" id="a5" role="region" aria-labelledby="q5"><div><p>Delivery and expert assembly are included, and we take the packaging away. Contact us to check delivery to your area.</p></div></div>
+          </div>
+          <div class="ct-faq-item">
+            <h3><button class="ct-faq-q" type="button" id="q6" aria-expanded="false" aria-controls="a6">What does the warranty cover? <i data-lucide="plus" class="icon-sm"></i></button></h3>
+            <div class="ct-faq-a" id="a6" role="region" aria-labelledby="q6"><div><p>Our pieces come with up to 10 years of coverage against manufacturing defects, plus repair, restoration and cleaning support from Customer Care.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. FINAL CTA (big number) ============ -->
+    <section class="ct-final" id="connect">
+      <span class="ct-final-circle ct-final-circle-1" aria-hidden="true"></span>
+      <span class="ct-final-circle ct-final-circle-2" aria-hidden="true"></span>
+
+      <div class="container ct-final-inner reveal">
+        <span class="ct-final-eyebrow"><i data-lucide="phone-call" class="icon-sm"></i> Prefer to talk?</span>
+        <a href="tel:+919876543210" class="ct-bignum">
+          <span>+91 98765 43210</span>
+          <i data-lucide="arrow-up-right" class="icon"></i>
+        </a>
+        <p>Call, chat or write to us any day of the week. We'd love to help you make your house a home.</p>
+        <div class="btn-row ct-final-actions">
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn btn-white"><i data-lucide="message-circle" class="icon-sm"></i> WhatsApp Us</a>
+          <a href="mailto:hello@urbanhaven.com" class="btn btn-ghost"><i data-lucide="mail" class="icon-sm"></i> Email Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="UrbanHaven home">
+          <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+          <span class="brand-text">
+            <span class="brand-name">UrbanHaven</span>
+            <span class="brand-tag">Furniture for Modern Living</span>
+          </span>
+        </a>
+        <p>Warm, well-made furniture and decor to help you build a home that feels like yours.</p>
+
+        <div class="socials">
+          <a href="#" class="social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#living">Living Room</a></li>
+          <li><a href="products.html#bedroom">Bedroom</a></li>
+          <li><a href="products.html#dining">Dining</a></li>
+          <li><a href="products.html#office">Office</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon-sm"></i> 24 Heritage Lane, Design District</li>
+          <li><i data-lucide="clock" class="icon-sm"></i> Daily, 10:00 AM to 8:00 PM</li>
+          <li><i data-lucide="mail" class="icon-sm"></i> hello@urbanhaven.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year">2026</span> UrbanHaven. All rights reserved.</p>
+        <ul class="legal">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

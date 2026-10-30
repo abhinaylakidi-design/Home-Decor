@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanHaven | Furniture for Modern Living</title>
+  <meta name="description" content="UrbanHaven is a furniture showroom and home decor store with warm, modern pieces for every room." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html" aria-label="UrbanHaven home">
+        <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+        <span class="brand-text">
+          <span class="brand-name">UrbanHaven</span>
+          <span class="brand-tag">Furniture for Modern Living</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li class="nav-dropdown">
+            <details>
+              <summary class="nav-dropdown-toggle">Home <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i></summary>
+              <div class="nav-dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="home2-premium.html">Home 2 Premium</a>
+              </div>
+            </details>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="decor.html">Decor Accessories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-cta"><a href="visit-showroom.html" class="btn btn-primary">Visit Showroom</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="icon icon-moon"></i>
+          <i data-lucide="sun" class="icon icon-sun"></i>
+        </button>
+        <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle right-to-left layout">
+          <i data-lucide="arrow-left-right" class="icon"></i>
+        </button>
+        <a href="visit-showroom.html" class="btn btn-primary header-cta">Visit Showroom</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <i data-lucide="menu" class="icon icon-menu"></i>
+          <i data-lucide="x" class="icon icon-close"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow reveal"><i data-lucide="sparkles" class="icon-sm"></i> New Season Collection</span>
+          <h1 class="reveal" style="--d:.1s">Warm, timeless furniture for <em>every room</em> you love.</h1>
+          <p class="lead reveal" style="--d:.2s">
+            Step into the UrbanHaven showroom and discover handcrafted sofas, beds, dining sets and decor,
+            designed to make modern homes feel calm, welcoming and lived in.
+          </p>
+          <div class="btn-row reveal" style="--d:.3s">
+            <a href="products.html" class="btn btn-primary">Explore Products <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            <a href="contact.html" class="btn btn-secondary">Book a Visit</a>
+          </div>
+          <ul class="hero-points reveal" style="--d:.4s">
+            <li><i data-lucide="truck" class="icon-sm"></i> Free delivery</li>
+            <li><i data-lucide="shield-check" class="icon-sm"></i> 10-year warranty</li>
+            <li><i data-lucide="armchair" class="icon-sm"></i> Try before you buy</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:.2s">
+          <div class="img-frame hero-img">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80" alt="Warm modern living room with a cream sofa and wooden furniture" />
+          </div>
+          <div class="float-card float-a">
+            <span class="float-icon"><i data-lucide="award" class="icon"></i></span>
+            <div><strong>Crafted to last</strong><small>Solid wood &amp; natural fabrics</small></div>
+          </div>
+          <div class="float-card float-b">
+            <span class="float-icon"><i data-lucide="star" class="icon"></i></span>
+            <div><strong>4.9 / 5 rating</strong><small>From 2,000+ happy homes</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. FEATURED COLLECTIONS ============ -->
+    <section class="section" id="collections">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Featured Collections</span>
+          <h2>Curated looks for modern homes</h2>
+          <p>Three signature collections, each designed as a complete story of texture, tone and craft.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card tap-card collection-card reveal" style="--d:.05s">
+            <div class="img-frame ratio-4-3">
+              <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1000&q=80" alt="Nordic Oak living room collection" />
+              <span class="tag">Bestseller</span>
+            </div>
+            <div class="card-body">
+              <h3>Nordic Oak</h3>
+              <p>Light oak frames, soft lines and breathable linen for bright, airy spaces.</p>
+              <a href="products.html" class="link-arrow">Explore collection <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+          </article>
+
+          <article class="card tap-card collection-card reveal" style="--d:.15s">
+            <div class="img-frame ratio-4-3">
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" alt="Terra Loom collection with clay-toned fabrics" />
+              <span class="tag">New</span>
+            </div>
+            <div class="card-body">
+              <h3>Terra Loom</h3>
+              <p>Textured weaves and clay tones that bring a grounded, earthy warmth indoors.</p>
+              <a href="products.html" class="link-arrow">Explore collection <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+          </article>
+
+          <article class="card tap-card collection-card reveal" style="--d:.25s">
+            <div class="img-frame ratio-4-3">
+              <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=80" alt="Haven Classic collection in walnut and leather" />
+              <span class="tag">Signature</span>
+            </div>
+            <div class="card-body">
+              <h3>Haven Classic</h3>
+              <p>Rich walnut and supple leather pieces with a timeless, tailored character.</p>
+              <a href="products.html" class="link-arrow">Explore collection <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. SHOP BY ROOM ============ -->
+    <section class="section section-alt" id="rooms">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Shop by Room</span>
+          <h2>Find the right piece for every space</h2>
+          <p>Browse furniture organised by room, from restful bedrooms to productive home offices.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <a href="products.html#living" class="room-tile tap-card reveal" style="--d:.05s">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Living room furniture" />
+            <div class="room-overlay">
+              <h3>Living Room</h3>
+              <span>48 pieces <i data-lucide="arrow-right" class="icon-sm flip"></i></span>
+            </div>
+          </a>
+          <a href="products.html#bedroom" class="room-tile tap-card reveal" style="--d:.15s">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Bedroom furniture" />
+            <div class="room-overlay">
+              <h3>Bedroom</h3>
+              <span>36 pieces <i data-lucide="arrow-right" class="icon-sm flip"></i></span>
+            </div>
+          </a>
+          <a href="products.html#dining" class="room-tile tap-card reveal" style="--d:.25s">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80" alt="Dining room furniture" />
+            <div class="room-overlay">
+              <h3>Dining</h3>
+              <span>29 pieces <i data-lucide="arrow-right" class="icon-sm flip"></i></span>
+            </div>
+          </a>
+          <a href="products.html#office" class="room-tile tap-card reveal" style="--d:.35s">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Home office furniture" />
+            <div class="room-overlay">
+              <h3>Office</h3>
+              <span>22 pieces <i data-lucide="arrow-right" class="icon-sm flip"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="split-media reveal">
+          <div class="img-frame ratio-4-5 about-img">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80" alt="Inside the UrbanHaven showroom" />
+          </div>
+          <div class="badge-circle">
+            <strong>15+</strong>
+            <span>Years of craft</span>
+          </div>
+        </div>
+
+        <div class="split-copy">
+          <span class="eyebrow reveal">About UrbanHaven</span>
+          <h2 class="reveal" style="--d:.1s">A showroom built around how you actually live</h2>
+          <p class="reveal" style="--d:.2s">
+            UrbanHaven started with a simple belief: a home should feel warm, personal and effortless.
+            We work with skilled artisans and sustainable materials to create furniture that looks
+            beautiful today and holds up for decades.
+          </p>
+          <ul class="check-list reveal" style="--d:.3s">
+            <li><i data-lucide="check" class="icon-sm"></i> Responsibly sourced solid wood and natural fabrics</li>
+            <li><i data-lucide="check" class="icon-sm"></i> Pieces you can see, touch and test in person</li>
+            <li><i data-lucide="check" class="icon-sm"></i> Friendly designers on hand for every budget</li>
+          </ul>
+          <div class="btn-row reveal" style="--d:.4s">
+            <a href="about.html" class="btn btn-primary">Our Story</a>
+            <a href="contact.html" class="btn btn-secondary">Meet the Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. SERVICES ============ -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Services</span>
+          <h2>More than furniture, a complete home experience</h2>
+          <p>From the first idea to the final cushion, our team supports every step.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card tap-card service-card reveal" style="--d:.05s">
+            <span class="icon-box"><i data-lucide="compass" class="icon"></i></span>
+            <h3>Design Consultation</h3>
+            <p>One-to-one sessions with our interior designers to shape a layout and palette you love.</p>
+          </article>
+          <article class="card tap-card service-card reveal" style="--d:.15s">
+            <span class="icon-box"><i data-lucide="ruler" class="icon"></i></span>
+            <h3>Custom Furniture</h3>
+            <p>Made-to-measure sofas, wardrobes and tables in your choice of finish and fabric.</p>
+          </article>
+          <article class="card tap-card service-card reveal" style="--d:.25s">
+            <span class="icon-box"><i data-lucide="layout-dashboard" class="icon"></i></span>
+            <h3>Space Planning</h3>
+            <p>Smart floor plans that balance flow, storage and comfort in homes of any size.</p>
+          </article>
+          <article class="card tap-card service-card reveal" style="--d:.05s">
+            <span class="icon-box"><i data-lucide="truck" class="icon"></i></span>
+            <h3>Delivery &amp; Assembly</h3>
+            <p>Careful white-glove delivery with expert assembly and packaging taken away.</p>
+          </article>
+          <article class="card tap-card service-card reveal" style="--d:.15s">
+            <span class="icon-box"><i data-lucide="sofa" class="icon"></i></span>
+            <h3>Home Styling</h3>
+            <p>Finishing touches, from rugs and lighting to art, styled to complete each room.</p>
+          </article>
+          <article class="card tap-card service-card reveal" style="--d:.25s">
+            <span class="icon-box"><i data-lucide="shield-check" class="icon"></i></span>
+            <h3>Warranty &amp; Care</h3>
+            <p>Up to 10 years of coverage plus repair, restoration and cleaning support.</p>
+          </article>
+        </div>
+
+        <div class="center-row reveal">
+          <a href="services.html" class="btn btn-primary">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. DECOR ACCESSORIES ============ -->
+    <section class="section" id="decor">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Decor Accessories</span>
+          <h2>Finishing touches that make it home</h2>
+          <p>Small details with big impact: handpicked accents in natural, tactile materials.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="card tap-card product-card reveal" style="--d:.05s">
+            <div class="img-frame ratio-1-1">
+              <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=700&q=80" alt="Handmade ceramic vase" />
+            </div>
+            <div class="card-body">
+              <h3>Ceramic Vase</h3>
+              <p class="price">₹2,490</p>
+            </div>
+          </article>
+          <article class="card tap-card product-card reveal" style="--d:.15s">
+            <div class="img-frame ratio-1-1">
+              <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=80" alt="Rattan pendant lamp" />
+            </div>
+            <div class="card-body">
+              <h3>Rattan Pendant Lamp</h3>
+              <p class="price">₹4,990</p>
+            </div>
+          </article>
+          <article class="card tap-card product-card reveal" style="--d:.25s">
+            <div class="img-frame ratio-1-1">
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Linen cushions arranged on a living room sofa" />
+            </div>
+            <div class="card-body">
+              <h3>Linen Cushion Set</h3>
+              <p class="price">₹1,890</p>
+            </div>
+          </article>
+          <article class="card tap-card product-card reveal" style="--d:.35s">
+            <div class="img-frame ratio-1-1">
+              <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=700&q=80" alt="Arched wall mirror" />
+            </div>
+            <div class="card-body">
+              <h3>Arched Wall Mirror</h3>
+              <p class="price">₹6,490</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-row reveal">
+          <a href="decor.html" class="btn btn-secondary">Shop Decor Accessories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. STATS ============ -->
+    <section class="section section-alt stats-section" id="stats">
+      <div class="container">
+        <div class="grid grid-4 stats-grid">
+          <div class="stat reveal" style="--d:.05s">
+            <i data-lucide="calendar-check" class="icon"></i>
+            <strong><span data-count="15">0</span>+</strong>
+            <span>Years of experience</span>
+          </div>
+          <div class="stat reveal" style="--d:.15s">
+            <i data-lucide="house" class="icon"></i>
+            <strong><span data-count="12000">0</span>+</strong>
+            <span>Homes furnished</span>
+          </div>
+          <div class="stat reveal" style="--d:.25s">
+            <i data-lucide="armchair" class="icon"></i>
+            <strong><span data-count="500">0</span>+</strong>
+            <span>Unique pieces</span>
+          </div>
+          <div class="stat reveal" style="--d:.35s">
+            <i data-lucide="heart-handshake" class="icon"></i>
+            <strong><span data-count="98">0</span>%</strong>
+            <span>Customer satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. TESTIMONIALS ============ -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2>Loved by the families we furnish</h2>
+          <p>Kind words from customers who turned their houses into homes with UrbanHaven.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <figure class="card tap-card quote-card reveal" style="--d:.05s">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i>
+            </div>
+            <blockquote>The sofa feels even better than it looked in the showroom. Delivery was smooth and the team was a joy to work with.</blockquote>
+            <figcaption><span class="avatar">AR</span><div><strong>Ananya Rao</strong><small>Living room makeover</small></div></figcaption>
+          </figure>
+
+          <figure class="card tap-card quote-card reveal" style="--d:.15s">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i>
+            </div>
+            <blockquote>Their designer helped us plan the whole flat on a budget. Every piece fits perfectly and the quality is outstanding.</blockquote>
+            <figcaption><span class="avatar">KM</span><div><strong>Karthik Menon</strong><small>Full-home furnishing</small></div></figcaption>
+          </figure>
+
+          <figure class="card tap-card quote-card reveal" style="--d:.25s">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i>
+            </div>
+            <blockquote>Our new dining set is the heart of the house now. Beautiful craftsmanship and genuinely helpful after-sales care.</blockquote>
+            <figcaption><span class="avatar">SN</span><div><strong>Sara Nair</strong><small>Dining room</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. VISIT SHOWROOM CTA ============ -->
+    <section class="section section-alt" id="visit">
+      <div class="container">
+        <div class="visit-card reveal">
+          <div class="visit-media">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="UrbanHaven showroom interior" />
+          </div>
+          <div class="visit-copy">
+            <span class="eyebrow">Visit the Showroom</span>
+            <h2>Sit, touch and feel the difference</h2>
+            <p>Book a relaxed showroom visit and let our designers walk you through collections, fabrics and finishes.</p>
+            <ul class="info-list">
+              <li><i data-lucide="map-pin" class="icon-sm"></i> 24 Heritage Lane, Design District</li>
+              <li><i data-lucide="clock" class="icon-sm"></i> Open daily, 10:00 AM to 8:00 PM</li>
+              <li><i data-lucide="phone" class="icon-sm"></i> +91 98765 43210</li>
+            </ul>
+            <div class="btn-row">
+              <a href="contact.html" class="btn btn-primary">Book a Visit</a>
+              <a href="contact.html#map" class="btn btn-secondary">Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="UrbanHaven home">
+          <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+          <span class="brand-text">
+            <span class="brand-name">UrbanHaven</span>
+            <span class="brand-tag">Furniture for Modern Living</span>
+          </span>
+        </a>
+        <p>Warm, well-made furniture and decor to help you build a home that feels like yours.</p>
+
+        <div class="socials">
+          <a href="#" class="social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#living">Living Room</a></li>
+          <li><a href="products.html#bedroom">Bedroom</a></li>
+          <li><a href="products.html#dining">Dining</a></li>
+          <li><a href="products.html#office">Office</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon-sm"></i> 24 Heritage Lane, Design District</li>
+          <li><i data-lucide="clock" class="icon-sm"></i> Daily, 10:00 AM to 8:00 PM</li>
+          <li><i data-lucide="mail" class="icon-sm"></i> hello@urbanhaven.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year">2026</span> UrbanHaven. All rights reserved.</p>
+        <ul class="legal">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="index.js"></script>
+</body>
+</html>

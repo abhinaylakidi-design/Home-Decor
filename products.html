@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | UrbanHaven</title>
+  <meta name="description" content="Browse UrbanHaven's handcrafted sofas, beds, dining sets and office furniture, made from solid wood and natural fabrics." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="products.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html" aria-label="UrbanHaven home">
+        <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+        <span class="brand-text">
+          <span class="brand-name">UrbanHaven</span>
+          <span class="brand-tag">Furniture for Modern Living</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li class="nav-dropdown">
+            <details>
+              <summary class="nav-dropdown-toggle">Home <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i></summary>
+              <div class="nav-dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="home2-premium.html">Home 2 Premium</a>
+              </div>
+            </details>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="decor.html">Decor Accessories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-cta"><a href="visit-showroom.html" class="btn btn-primary">Visit Showroom</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="icon icon-moon"></i>
+          <i data-lucide="sun" class="icon icon-sun"></i>
+        </button>
+        <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle right-to-left layout">
+          <i data-lucide="arrow-left-right" class="icon"></i>
+        </button>
+        <a href="visit-showroom.html" class="btn btn-primary header-cta">Visit Showroom</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <i data-lucide="menu" class="icon icon-menu"></i>
+          <i data-lucide="x" class="icon icon-close"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO (copy + scrolling product reel) ============ -->
+    <section class="pr-hero" id="top">
+      <span class="pr-hero-ring" aria-hidden="true"></span>
+
+      <div class="container pr-hero-grid">
+        <div class="pr-hero-copy">
+          <span class="eyebrow pr-in" style="--i:0"><i data-lucide="shopping-bag" class="icon-sm"></i> The Collection</span>
+          <h1 class="pr-in" style="--i:1">Furniture made to be <span class="pr-hl">lived in</span>, loved and passed on.</h1>
+          <p class="pr-lead pr-in" style="--i:2">
+            Explore more than 130 handcrafted pieces across living, bedroom, dining and office,
+            all built from solid wood and natural fabrics.
+          </p>
+
+          <div class="pr-chips pr-in" style="--i:3">
+            <a href="#living" class="pr-chip"><i data-lucide="sofa" class="icon-sm"></i> Living</a>
+            <a href="#bedroom" class="pr-chip"><i data-lucide="bed-double" class="icon-sm"></i> Bedroom</a>
+            <a href="#dining" class="pr-chip"><i data-lucide="utensils" class="icon-sm"></i> Dining</a>
+            <a href="#office" class="pr-chip"><i data-lucide="briefcase" class="icon-sm"></i> Office</a>
+          </div>
+
+          <div class="btn-row pr-in" style="--i:4">
+            <a href="#living" class="btn btn-primary">Start Browsing <i data-lucide="arrow-down" class="icon-sm"></i></a>
+            <a href="contact.html" class="btn btn-secondary">Talk to a Designer</a>
+          </div>
+
+          <div class="pr-trust pr-in" style="--i:5">
+            <span class="pr-trust-stars" aria-hidden="true">
+              <i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i>
+            </span>
+            <span>Rated <strong>4.9</strong> by 2,000+ happy homes</span>
+          </div>
+        </div>
+
+        <div class="pr-hero-visual pr-in" style="--i:2">
+          <div class="pr-reel" aria-hidden="true">
+            <div class="pr-col">
+              <div class="pr-track">
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+              </div>
+            </div>
+            <div class="pr-col pr-col-rev">
+              <div class="pr-track">
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+                <div class="pr-tile"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="" /></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-float">
+            <span class="pr-float-icon"><i data-lucide="sparkles" class="icon"></i></span>
+            <div><strong>New arrivals</strong><small>120+ pieces this season</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. SHOP BY ROOM ============ -->
+    <section class="section section-alt" id="rooms">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Shop by Room</span>
+          <h2>Start with the space you're styling</h2>
+          <p>Jump straight to the room you're working on and browse pieces designed to work together.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <a href="#living" class="pr-room tap-card reveal" style="--d:.05s">
+            <span class="pr-room-icon"><i data-lucide="sofa" class="icon"></i></span>
+            <h3>Living Room</h3>
+            <span class="pr-room-count">48 pieces</span>
+            <i data-lucide="arrow-right" class="icon pr-room-arrow flip"></i>
+          </a>
+          <a href="#bedroom" class="pr-room tap-card reveal" style="--d:.15s">
+            <span class="pr-room-icon"><i data-lucide="bed-double" class="icon"></i></span>
+            <h3>Bedroom</h3>
+            <span class="pr-room-count">36 pieces</span>
+            <i data-lucide="arrow-right" class="icon pr-room-arrow flip"></i>
+          </a>
+          <a href="#dining" class="pr-room tap-card reveal" style="--d:.25s">
+            <span class="pr-room-icon"><i data-lucide="utensils" class="icon"></i></span>
+            <h3>Dining</h3>
+            <span class="pr-room-count">29 pieces</span>
+            <i data-lucide="arrow-right" class="icon pr-room-arrow flip"></i>
+          </a>
+          <a href="#office" class="pr-room tap-card reveal" style="--d:.35s">
+            <span class="pr-room-icon"><i data-lucide="briefcase" class="icon"></i></span>
+            <h3>Office</h3>
+            <span class="pr-room-count">22 pieces</span>
+            <i data-lucide="arrow-right" class="icon pr-room-arrow flip"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. LIVING ROOM ============ -->
+    <section class="section" id="living">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Living Room</span>
+          <h2>Sofas and seating for slow evenings</h2>
+          <p>Deep, supportive seating and sculpted tables that make the heart of the home feel effortless.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="pr-card tap-card reveal" style="--d:.05s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Nordic Oak three-seater sofa" loading="lazy" />
+              <span class="pr-badge">Bestseller</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Living Room</span>
+              <h3>Nordic Oak 3-Seater Sofa</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.9 <small>(128)</small></div>
+              <div class="pr-price"><strong>₹54,990</strong> <s>₹62,990</s></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.15s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Terra Loom accent chair" loading="lazy" />
+              <span class="pr-badge">New</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Living Room</span>
+              <h3>Terra Loom Accent Chair</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.8 <small>(76)</small></div>
+              <div class="pr-price"><strong>₹18,490</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.25s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80" alt="Walnut coffee table" loading="lazy" />
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Living Room</span>
+              <h3>Walnut Coffee Table</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.9 <small>(92)</small></div>
+              <div class="pr-price"><strong>₹14,990</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.35s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Linen media console" loading="lazy" />
+              <span class="pr-badge">Save 10%</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Living Room</span>
+              <h3>Linen Media Console</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.7 <small>(54)</small></div>
+              <div class="pr-price"><strong>₹26,990</strong> <s>₹29,990</s></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. BEDROOM ============ -->
+    <section class="section section-alt" id="bedroom">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Bedroom</span>
+          <h2>Beds and storage for restful nights</h2>
+          <p>Solid-wood frames and calm, tactile finishes that turn the bedroom into a retreat.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="pr-card tap-card reveal" style="--d:.05s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Haven queen bed" loading="lazy" />
+              <span class="pr-badge">Signature</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Bedroom</span>
+              <h3>Haven Queen Bed</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.9 <small>(141)</small></div>
+              <div class="pr-price"><strong>₹48,990</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.15s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Oak bedside table" loading="lazy" />
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Bedroom</span>
+              <h3>Oak Bedside Table</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.8 <small>(87)</small></div>
+              <div class="pr-price"><strong>₹7,490</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.25s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80" alt="Walnut wardrobe" loading="lazy" />
+              <span class="pr-badge">New</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Bedroom</span>
+              <h3>Walnut Sliding Wardrobe</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.8 <small>(63)</small></div>
+              <div class="pr-price"><strong>₹67,990</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.35s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt="Upholstered bench" loading="lazy" />
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Bedroom</span>
+              <h3>Upholstered Bed Bench</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.7 <small>(41)</small></div>
+              <div class="pr-price"><strong>₹9,990</strong> <s>₹11,490</s></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. DINING ============ -->
+    <section class="section" id="dining">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Dining</span>
+          <h2>Tables worth gathering around</h2>
+          <p>Generous, durable dining pieces made for long dinners, family celebrations and everything between.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="pr-card tap-card reveal" style="--d:.05s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80" alt="Six-seater oak dining set" loading="lazy" />
+              <span class="pr-badge">Bestseller</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Dining</span>
+              <h3>Oak 6-Seater Dining Set</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.9 <small>(118)</small></div>
+              <div class="pr-price"><strong>₹59,990</strong> <s>₹66,990</s></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.15s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=800&q=80" alt="Rattan dining chair" loading="lazy" />
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Dining</span>
+              <h3>Rattan Dining Chair</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.8 <small>(97)</small></div>
+              <div class="pr-price"><strong>₹6,490</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.25s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&w=800&q=80" alt="Marble top console" loading="lazy" />
+              <span class="pr-badge">New</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Dining</span>
+              <h3>Marble Top Console</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.7 <small>(38)</small></div>
+              <div class="pr-price"><strong>₹22,990</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.35s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Walnut bar cabinet" loading="lazy" />
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Dining</span>
+              <h3>Walnut Bar Cabinet</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.9 <small>(52)</small></div>
+              <div class="pr-price"><strong>₹31,990</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. OFFICE ============ -->
+    <section class="section section-alt" id="office">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Office</span>
+          <h2>A home office that keeps you focused</h2>
+          <p>Comfortable, well-proportioned workspaces with smart storage and a calm, natural look.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="pr-card tap-card reveal" style="--d:.05s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Solid wood work desk" loading="lazy" />
+              <span class="pr-badge">Bestseller</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Office</span>
+              <h3>Solid Wood Work Desk</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.9 <small>(109)</small></div>
+              <div class="pr-price"><strong>₹24,990</strong> <s>₹27,990</s></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.15s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80" alt="Ergonomic linen chair" loading="lazy" />
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Office</span>
+              <h3>Ergonomic Linen Chair</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.8 <small>(84)</small></div>
+              <div class="pr-price"><strong>₹14,490</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.25s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=800&q=80" alt="Open bookshelf" loading="lazy" />
+              <span class="pr-badge">New</span>
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Office</span>
+              <h3>Open Oak Bookshelf</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.7 <small>(46)</small></div>
+              <div class="pr-price"><strong>₹19,990</strong></div>
+            </div>
+          </article>
+
+          <article class="pr-card tap-card reveal" style="--d:.35s">
+            <div class="pr-media">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Storage credenza" loading="lazy" />
+              <button class="pr-heart" type="button" aria-label="Add to wishlist" aria-pressed="false"><i data-lucide="heart" class="icon-sm"></i></button>
+              <a href="contact.html" class="pr-quick">Quick Enquiry <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+            <div class="pr-body">
+              <span class="pr-cat">Office</span>
+              <h3>Walnut Storage Credenza</h3>
+              <div class="pr-meta"><i data-lucide="star" class="icon-sm"></i> 4.8 <small>(33)</small></div>
+              <div class="pr-price"><strong>₹28,990</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. WHY SHOP WITH US ============ -->
+    <section class="section" id="why">
+      <div class="container pr-why">
+        <div class="pr-why-copy">
+          <span class="eyebrow reveal">Why UrbanHaven</span>
+          <h2 class="reveal" style="--d:.1s">Buy with confidence, live with comfort</h2>
+          <p class="reveal" style="--d:.2s">
+            Every product comes with the support that makes a big purchase feel simple, from the first visit to years after delivery.
+          </p>
+          <div class="btn-row reveal" style="--d:.3s">
+            <a href="services.html" class="btn btn-primary">Explore Services</a>
+            <a href="about.html" class="btn btn-secondary">Our Story</a>
+          </div>
+        </div>
+
+        <div class="pr-why-grid">
+          <article class="card tap-card pr-feature reveal" style="--d:.05s">
+            <span class="icon-box"><i data-lucide="truck" class="icon"></i></span>
+            <h3>Free Delivery</h3>
+            <p>White-glove delivery and expert assembly on every order.</p>
+          </article>
+          <article class="card tap-card pr-feature reveal" style="--d:.15s">
+            <span class="icon-box"><i data-lucide="shield-check" class="icon"></i></span>
+            <h3>10-Year Warranty</h3>
+            <p>Long coverage with repair and restoration support.</p>
+          </article>
+          <article class="card tap-card pr-feature reveal" style="--d:.25s">
+            <span class="icon-box"><i data-lucide="armchair" class="icon"></i></span>
+            <h3>Try Before You Buy</h3>
+            <p>Sit, touch and test every piece in our showroom.</p>
+          </article>
+          <article class="card tap-card pr-feature reveal" style="--d:.35s">
+            <span class="icon-box"><i data-lucide="ruler" class="icon"></i></span>
+            <h3>Made to Measure</h3>
+            <p>Custom sizes, finishes and fabrics for your space.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. CUSTOM ORDER CTA ============ -->
+    <section class="pr-cta-wrap" id="custom">
+      <div class="container">
+        <div class="pr-cta reveal">
+          <span class="pr-cta-circle pr-cta-circle-1" aria-hidden="true"></span>
+          <span class="pr-cta-circle pr-cta-circle-2" aria-hidden="true"></span>
+          <div class="pr-cta-copy">
+            <span class="pr-cta-eyebrow"><i data-lucide="phone-call" class="icon-sm"></i> Need help choosing?</span>
+            <h2>Can't find the perfect piece? We'll build it.</h2>
+            <p>Share your space and your style with our designers and we'll create a made-to-measure piece just for you.</p>
+          </div>
+          <div class="pr-cta-actions">
+            <a href="contact.html" class="btn btn-white">Request a Custom Piece</a>
+            <a href="tel:+919876543210" class="btn btn-ghost"><i data-lucide="phone" class="icon-sm"></i> +91 98765 43210</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="UrbanHaven home">
+          <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+          <span class="brand-text">
+            <span class="brand-name">UrbanHaven</span>
+            <span class="brand-tag">Furniture for Modern Living</span>
+          </span>
+        </a>
+        <p>Warm, well-made furniture and decor to help you build a home that feels like yours.</p>
+
+        <div class="socials">
+          <a href="#" class="social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#living">Living Room</a></li>
+          <li><a href="products.html#bedroom">Bedroom</a></li>
+          <li><a href="products.html#dining">Dining</a></li>
+          <li><a href="products.html#office">Office</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon-sm"></i> 24 Heritage Lane, Design District</li>
+          <li><i data-lucide="clock" class="icon-sm"></i> Daily, 10:00 AM to 8:00 PM</li>
+          <li><i data-lucide="mail" class="icon-sm"></i> hello@urbanhaven.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year">2026</span> UrbanHaven. All rights reserved.</p>
+        <ul class="legal">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="products.js"></script>
+</body>
+</html>

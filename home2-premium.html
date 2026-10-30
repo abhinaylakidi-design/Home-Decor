@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanHaven | Premium Furniture for Modern Living</title>
+  <meta name="description" content="UrbanHaven premium furniture showroom: handcrafted sofas, beds, dining sets and decor in solid wood and natural fabrics." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home2-premium.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html" aria-label="UrbanHaven home">
+        <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+        <span class="brand-text">
+          <span class="brand-name">UrbanHaven</span>
+          <span class="brand-tag">Furniture for Modern Living</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li class="nav-dropdown">
+            <details>
+              <summary class="nav-dropdown-toggle">Home <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i></summary>
+              <div class="nav-dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="home2-premium.html">Home 2 Premium</a>
+              </div>
+            </details>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="decor.html">Decor Accessories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-cta"><a href="visit-showroom.html" class="btn btn-primary">Visit Showroom</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="icon icon-moon"></i>
+          <i data-lucide="sun" class="icon icon-sun"></i>
+        </button>
+        <button class="icon-btn" id="rtlToggle" type="button" aria-label="Toggle right-to-left layout">
+          <i data-lucide="arrow-left-right" class="icon"></i>
+        </button>
+        <a href="visit-showroom.html" class="btn btn-primary header-cta">Visit Showroom</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <i data-lucide="menu" class="icon icon-menu"></i>
+          <i data-lucide="x" class="icon icon-close"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO (cinematic slider) ============ -->
+    <section class="h2-hero" id="top" aria-roledescription="carousel" aria-label="Featured rooms">
+      <h1 class="sr-only">UrbanHaven: premium furniture for modern living</h1>
+
+      <div class="h2-slides" id="h2Slides">
+        <div class="h2-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+          <div class="h2-media"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=2000&q=80" alt="Warm living room with a cream sofa" /></div>
+          <div class="h2-cap">
+            <span class="h2-kicker">Living Room Collection</span>
+            <p class="h2-title">Living, <em>redefined.</em></p>
+            <p class="h2-text">Deep, sculpted sofas and calm oak tables for the heart of your home.</p>
+            <div class="btn-row">
+              <a href="products.html#living" class="btn btn-primary">Explore Living <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+              <a href="contact.html" class="btn btn-light">Book a Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="h2-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+          <div class="h2-media"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2000&q=80" alt="Serene bedroom with a solid wood bed" /></div>
+          <div class="h2-cap">
+            <span class="h2-kicker">Bedroom Collection</span>
+            <p class="h2-title">Rest, <em>beautifully.</em></p>
+            <p class="h2-text">Solid-wood beds and soft textures that turn the bedroom into a retreat.</p>
+            <div class="btn-row">
+              <a href="products.html#bedroom" class="btn btn-primary">Explore Bedroom <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+              <a href="contact.html" class="btn btn-light">Book a Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="h2-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+          <div class="h2-media"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=2000&q=80" alt="Elegant dining room with a wooden table" /></div>
+          <div class="h2-cap">
+            <span class="h2-kicker">Dining Collection</span>
+            <p class="h2-title">Gather <em>around.</em></p>
+            <p class="h2-text">Generous tables made for long dinners and the people you love.</p>
+            <div class="btn-row">
+              <a href="products.html#dining" class="btn btn-primary">Explore Dining <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+              <a href="contact.html" class="btn btn-light">Book a Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container h2-controls">
+        <div class="h2-progs" role="tablist" aria-label="Choose slide">
+          <button class="h2-prog is-active" type="button" role="tab" aria-selected="true" data-i="0"><span>Living</span><i><b></b></i></button>
+          <button class="h2-prog" type="button" role="tab" aria-selected="false" data-i="1"><span>Bedroom</span><i><b></b></i></button>
+          <button class="h2-prog" type="button" role="tab" aria-selected="false" data-i="2"><span>Dining</span><i><b></b></i></button>
+        </div>
+
+        <div class="h2-nav">
+          <span class="h2-count"><strong id="h2Cur">01</strong> / 03</span>
+          <button class="h2-arrow" type="button" id="h2Prev" aria-label="Previous slide"><i data-lucide="arrow-left" class="icon flip"></i></button>
+          <button class="h2-arrow" type="button" id="h2Next" aria-label="Next slide"><i data-lucide="arrow-right" class="icon flip"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. BRAND STATEMENT ============ -->
+    <section class="section h2-story" id="story">
+      <div class="container h2-story-inner">
+        <span class="eyebrow reveal"><i data-lucide="sparkles" class="icon-sm"></i> The UrbanHaven Way</span>
+        <p class="h2-words" id="h2Words">
+          We believe a home should feel calm, personal and entirely yours. That's why every UrbanHaven piece is shaped by hand from solid wood and natural fabrics, designed to be lived in, loved and passed on.
+        </p>
+      </div>
+
+      <div class="h2-marquee" dir="ltr" aria-hidden="true">
+        <div class="h2-marquee-track">
+          <span>Solid Wood</span><i data-lucide="asterisk" class="icon"></i>
+          <span class="is-fill">Natural Fabrics</span><i data-lucide="asterisk" class="icon"></i>
+          <span>Handcrafted</span><i data-lucide="asterisk" class="icon"></i>
+          <span class="is-fill">10-Year Warranty</span><i data-lucide="asterisk" class="icon"></i>
+          <span>Made to Measure</span><i data-lucide="asterisk" class="icon"></i>
+          <span class="is-fill">Free Delivery</span><i data-lucide="asterisk" class="icon"></i>
+          <span>Solid Wood</span><i data-lucide="asterisk" class="icon"></i>
+          <span class="is-fill">Natural Fabrics</span><i data-lucide="asterisk" class="icon"></i>
+          <span>Handcrafted</span><i data-lucide="asterisk" class="icon"></i>
+          <span class="is-fill">10-Year Warranty</span><i data-lucide="asterisk" class="icon"></i>
+          <span>Made to Measure</span><i data-lucide="asterisk" class="icon"></i>
+          <span class="is-fill">Free Delivery</span><i data-lucide="asterisk" class="icon"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. SIGNATURE COLLECTIONS (rail) ============ -->
+    <section class="section section-alt h2-collections" id="collections">
+      <div class="container h2-rail-head reveal">
+        <div>
+          <span class="eyebrow">Signature Collections</span>
+          <h2>Five stories of texture, tone and craft</h2>
+        </div>
+        <div class="h2-rail-nav">
+          <button class="h2-arrow h2-arrow-dark" type="button" id="railPrev" aria-label="Scroll collections back"><i data-lucide="arrow-left" class="icon flip"></i></button>
+          <button class="h2-arrow h2-arrow-dark" type="button" id="railNext" aria-label="Scroll collections forward"><i data-lucide="arrow-right" class="icon flip"></i></button>
+        </div>
+      </div>
+
+      <div class="h2-rail" id="h2Rail" tabindex="0" aria-label="Collections, scroll horizontally">
+        <article class="h2-coll">
+          <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80" alt="Nordic Oak collection" loading="lazy" draggable="false" />
+          <span class="h2-coll-tag">Bestseller</span>
+          <div class="h2-coll-info">
+            <h3>Nordic Oak</h3>
+            <div class="h2-coll-more"><div>
+              <p>Light oak frames, soft lines and breathable linen for bright, airy spaces.</p>
+              <a href="products.html" class="h2-link">Explore <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div></div>
+          </div>
+        </article>
+
+        <article class="h2-coll">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Terra Loom collection" loading="lazy" draggable="false" />
+          <span class="h2-coll-tag">New</span>
+          <div class="h2-coll-info">
+            <h3>Terra Loom</h3>
+            <div class="h2-coll-more"><div>
+              <p>Textured weaves and clay tones that bring a grounded, earthy warmth indoors.</p>
+              <a href="products.html" class="h2-link">Explore <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div></div>
+          </div>
+        </article>
+
+        <article class="h2-coll">
+          <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=80" alt="Haven Classic collection" loading="lazy" draggable="false" />
+          <span class="h2-coll-tag">Signature</span>
+          <div class="h2-coll-info">
+            <h3>Haven Classic</h3>
+            <div class="h2-coll-more"><div>
+              <p>Rich walnut and supple leather pieces with a timeless, tailored character.</p>
+              <a href="products.html" class="h2-link">Explore <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div></div>
+          </div>
+        </article>
+
+        <article class="h2-coll">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80" alt="Coastal Linen collection" loading="lazy" draggable="false" />
+          <span class="h2-coll-tag">Light &amp; Airy</span>
+          <div class="h2-coll-info">
+            <h3>Coastal Linen</h3>
+            <div class="h2-coll-more"><div>
+              <p>Sun-washed neutrals and relaxed silhouettes inspired by slow seaside mornings.</p>
+              <a href="products.html" class="h2-link">Explore <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div></div>
+          </div>
+        </article>
+
+        <article class="h2-coll">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Urban Loft collection" loading="lazy" draggable="false" />
+          <span class="h2-coll-tag">Modern</span>
+          <div class="h2-coll-info">
+            <h3>Urban Loft</h3>
+            <div class="h2-coll-more"><div>
+              <p>Clean geometry, dark woods and tactile metal details for confident modern homes.</p>
+              <a href="products.html" class="h2-link">Explore <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <div class="h2-rail-bar" aria-hidden="true"><span id="h2RailFill"></span></div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PIECE OF THE MONTH ============ -->
+    <section class="section" id="spotlight">
+      <div class="container h2-spot">
+
+        <div class="h2-gallery reveal">
+          <div class="h2-gallery-main">
+            <img id="h2Main" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1100&q=80" alt="Haven Cloud sofa" />
+            <span class="h2-badge"><i data-lucide="award" class="icon-sm"></i> Piece of the Month</span>
+          </div>
+          <div class="h2-thumbs" role="group" aria-label="Product views">
+            <button type="button" class="h2-thumb is-active" data-src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1100&q=80" aria-label="View 1"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=300&q=70" alt="" /></button>
+            <button type="button" class="h2-thumb" data-src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1100&q=80" aria-label="View 2"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=300&q=70" alt="" /></button>
+            <button type="button" class="h2-thumb" data-src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1100&q=80" aria-label="View 3"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=300&q=70" alt="" /></button>
+          </div>
+        </div>
+
+        <div class="h2-spot-copy">
+          <span class="eyebrow reveal">Featured Piece</span>
+          <h2 class="reveal" style="--d:.08s">Haven Cloud Sofa</h2>
+          <div class="h2-rating reveal" style="--d:.14s">
+            <span class="h2-stars" aria-hidden="true"><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i></span>
+            <span>4.9 · 128 reviews</span>
+          </div>
+          <p class="h2-spot-text reveal" style="--d:.2s">
+            A generous three-seater with a hand-finished solid wood frame, high-resilience cushions and
+            removable linen covers. Deep, supportive and made to last for decades.
+          </p>
+
+          <div class="h2-opt reveal" style="--d:.26s">
+            <span class="h2-opt-label">Frame finish: <strong id="h2FinishName">Natural Oak</strong></span>
+            <div class="h2-swatches" role="radiogroup" aria-label="Frame finish">
+              <button type="button" class="h2-sw is-active" role="radio" aria-checked="true" style="--c:#D2B48C" data-name="Natural Oak" data-price="₹54,990" aria-label="Natural Oak"></button>
+              <button type="button" class="h2-sw" role="radio" aria-checked="false" style="--c:#5B3E2B" data-name="Smoked Walnut" data-price="₹58,990" aria-label="Smoked Walnut"></button>
+              <button type="button" class="h2-sw" role="radio" aria-checked="false" style="--c:#E8E0D2" data-name="Pale Ash" data-price="₹56,490" aria-label="Pale Ash"></button>
+            </div>
+          </div>
+
+          <div class="h2-price reveal" style="--d:.3s">
+            <strong id="h2Price">₹54,990</strong>
+            <s>₹62,990</s>
+            <span class="h2-save">Save 13%</span>
+          </div>
+
+          <ul class="h2-feats reveal" style="--d:.34s">
+            <li><i data-lucide="trees" class="icon-sm"></i> Solid wood frame</li>
+            <li><i data-lucide="shirt" class="icon-sm"></i> Removable linen covers</li>
+            <li><i data-lucide="truck" class="icon-sm"></i> Free delivery &amp; assembly</li>
+            <li><i data-lucide="shield-check" class="icon-sm"></i> 10-year warranty</li>
+          </ul>
+
+          <div class="h2-spot-actions reveal" style="--d:.4s">
+            <a href="contact.html" class="btn btn-primary">Enquire Now <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            <button type="button" class="h2-wish" id="h2Wish" aria-pressed="false" aria-label="Add to wishlist"><i data-lucide="heart" class="icon"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. SHOP BY ROOM (bento) ============ -->
+    <section class="section section-alt" id="rooms">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Shop by Room</span>
+          <h2>Find the right piece for every space</h2>
+          <p>From restful bedrooms to productive home offices, browse furniture organised by how you live.</p>
+        </div>
+
+        <div class="h2-bento">
+          <a href="products.html#living" class="h2-tile h2-tile-lg reveal" style="--d:.05s">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1100&q=80" alt="Living room furniture" loading="lazy" />
+            <div class="h2-tile-info">
+              <span class="h2-chip">48 pieces</span>
+              <h3>Living Room</h3>
+              <p>Sofas, armchairs, tables and storage for slow evenings.</p>
+              <span class="h2-go"><i data-lucide="arrow-up-right" class="icon"></i></span>
+            </div>
+          </a>
+          <a href="products.html#bedroom" class="h2-tile reveal" style="--d:.15s">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Bedroom furniture" loading="lazy" />
+            <div class="h2-tile-info">
+              <span class="h2-chip">36 pieces</span>
+              <h3>Bedroom</h3>
+              <span class="h2-go"><i data-lucide="arrow-up-right" class="icon"></i></span>
+            </div>
+          </a>
+          <a href="products.html#dining" class="h2-tile reveal" style="--d:.25s">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80" alt="Dining room furniture" loading="lazy" />
+            <div class="h2-tile-info">
+              <span class="h2-chip">29 pieces</span>
+              <h3>Dining</h3>
+              <span class="h2-go"><i data-lucide="arrow-up-right" class="icon"></i></span>
+            </div>
+          </a>
+          <a href="products.html#office" class="h2-tile h2-tile-wide reveal" style="--d:.35s">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1100&q=80" alt="Home office furniture" loading="lazy" />
+            <div class="h2-tile-info">
+              <span class="h2-chip">22 pieces</span>
+              <h3>Home Office</h3>
+              <p>Desks, chairs and shelving for focused, comfortable work.</p>
+              <span class="h2-go"><i data-lucide="arrow-up-right" class="icon"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CRAFTSMANSHIP (parallax) ============ -->
+    <section class="h2-craft" id="craft">
+      <div class="h2-craft-bg" id="h2CraftBg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="" loading="lazy" />
+      </div>
+      <div class="h2-craft-shade" aria-hidden="true"></div>
+
+      <div class="container h2-craft-inner">
+        <div class="h2-craft-head reveal">
+          <span class="h2-craft-eyebrow">Craftsmanship</span>
+          <h2>Made by hand, made to last</h2>
+          <p>Fifteen years of patient work by artisans who treat every joint, stitch and finish as a signature.</p>
+        </div>
+
+        <div class="h2-craft-cards">
+          <article class="h2-glass reveal" style="--d:.05s">
+            <i data-lucide="trees" class="icon"></i>
+            <h3>Solid Wood</h3>
+            <p>Responsibly sourced timber, seasoned and shaped for strength.</p>
+          </article>
+          <article class="h2-glass reveal" style="--d:.15s">
+            <i data-lucide="hand" class="icon"></i>
+            <h3>Hand Finished</h3>
+            <p>Every surface sanded and finished by hand for a natural feel.</p>
+          </article>
+          <article class="h2-glass reveal" style="--d:.25s">
+            <i data-lucide="shirt" class="icon"></i>
+            <h3>Natural Fabrics</h3>
+            <p>Breathable linen and wool that age gracefully with use.</p>
+          </article>
+          <article class="h2-glass reveal" style="--d:.35s">
+            <i data-lucide="badge-check" class="icon"></i>
+            <h3>Quality Tested</h3>
+            <p>Stress-tested for decades of everyday family living.</p>
+          </article>
+        </div>
+
+        <div class="h2-craft-stats">
+          <div class="h2-stat reveal" style="--d:.05s"><strong><span data-count="15">0</span>+</strong><span>Years of craft</span></div>
+          <div class="h2-stat reveal" style="--d:.15s"><strong><span data-count="12000">0</span>+</strong><span>Homes furnished</span></div>
+          <div class="h2-stat reveal" style="--d:.25s"><strong><span data-count="98">0</span>%</strong><span>Happy customers</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. SERVICES (image accordion) ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Services</span>
+          <h2>A complete home experience</h2>
+          <p>From the first idea to the final cushion, our team supports every step.</p>
+        </div>
+
+        <div class="h2-panels reveal" id="h2Panels">
+          <article class="h2-panel is-active" tabindex="0" aria-label="Design Consultation">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" />
+            <span class="h2-panel-no">01</span>
+            <span class="h2-panel-label">Design Consultation</span>
+            <div class="h2-panel-body">
+              <i data-lucide="compass" class="icon"></i>
+              <h3>Design Consultation</h3>
+              <p>One-to-one sessions with our interior designers to shape a layout and palette you love.</p>
+              <a href="services.html" class="h2-link">Learn more <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-panel" tabindex="0" aria-label="Custom Furniture">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" />
+            <span class="h2-panel-no">02</span>
+            <span class="h2-panel-label">Custom Furniture</span>
+            <div class="h2-panel-body">
+              <i data-lucide="ruler" class="icon"></i>
+              <h3>Custom Furniture</h3>
+              <p>Made-to-measure sofas, wardrobes and tables in your choice of finish and fabric.</p>
+              <a href="services.html" class="h2-link">Learn more <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-panel" tabindex="0" aria-label="Space Planning">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" />
+            <span class="h2-panel-no">03</span>
+            <span class="h2-panel-label">Space Planning</span>
+            <div class="h2-panel-body">
+              <i data-lucide="layout-dashboard" class="icon"></i>
+              <h3>Space Planning</h3>
+              <p>Smart floor plans that balance flow, storage and comfort in homes of any size.</p>
+              <a href="services.html" class="h2-link">Learn more <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+          </article>
+
+          <article class="h2-panel" tabindex="0" aria-label="Delivery and Assembly">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" />
+            <span class="h2-panel-no">04</span>
+            <span class="h2-panel-label">Delivery &amp; Assembly</span>
+            <div class="h2-panel-body">
+              <i data-lucide="truck" class="icon"></i>
+              <h3>Delivery &amp; Assembly</h3>
+              <p>Careful white-glove delivery with expert assembly and packaging taken away.</p>
+              <a href="services.html" class="h2-link">Learn more <i data-lucide="arrow-right" class="icon-sm flip"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. TESTIMONIALS ============ -->
+    <section class="section section-alt" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2>Loved by the families we furnish</h2>
+        </div>
+
+        <div class="h2-reviews reveal" id="h2Reviews">
+          <i data-lucide="quote" class="icon h2-quote-mark" aria-hidden="true"></i>
+
+          <div class="h2-quotes" aria-live="polite">
+            <figure class="h2-quote is-active">
+              <blockquote>The sofa feels even better than it looked in the showroom. Delivery was smooth and the team was a joy to work with from start to finish.</blockquote>
+              <figcaption><strong>Ananya Rao</strong><span>Living room makeover</span></figcaption>
+            </figure>
+            <figure class="h2-quote">
+              <blockquote>Their designer helped us plan the whole flat on a budget. Every piece fits perfectly and the quality is genuinely outstanding.</blockquote>
+              <figcaption><strong>Karthik Menon</strong><span>Full-home furnishing</span></figcaption>
+            </figure>
+            <figure class="h2-quote">
+              <blockquote>Our new dining set is the heart of the house now. Beautiful craftsmanship and really helpful after-sales care.</blockquote>
+              <figcaption><strong>Sara Nair</strong><span>Dining room</span></figcaption>
+            </figure>
+            <figure class="h2-quote">
+              <blockquote>The custom desk was built exactly to our measurements. Working from home has never felt this comfortable and calm.</blockquote>
+              <figcaption><strong>Vikram Shetty</strong><span>Home office</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="h2-reviews-nav">
+            <button class="h2-arrow h2-arrow-dark" type="button" id="revPrev" aria-label="Previous testimonial"><i data-lucide="arrow-left" class="icon flip"></i></button>
+            <div class="h2-avatars" role="tablist" aria-label="Choose testimonial">
+              <button type="button" class="h2-avatar is-active" role="tab" aria-selected="true" aria-label="Ananya Rao">AR</button>
+              <button type="button" class="h2-avatar" role="tab" aria-selected="false" aria-label="Karthik Menon">KM</button>
+              <button type="button" class="h2-avatar" role="tab" aria-selected="false" aria-label="Sara Nair">SN</button>
+              <button type="button" class="h2-avatar" role="tab" aria-selected="false" aria-label="Vikram Shetty">VS</button>
+            </div>
+            <button class="h2-arrow h2-arrow-dark" type="button" id="revNext" aria-label="Next testimonial"><i data-lucide="arrow-right" class="icon flip"></i></button>
+          </div>
+
+          <div class="h2-reviews-score">
+            <span class="h2-stars" aria-hidden="true"><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i><i data-lucide="star" class="icon-sm"></i></span>
+            <span><strong>4.9 / 5</strong> from 2,000+ happy homes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. VISIT CTA (dark) ============ -->
+    <section class="h2-visit" id="visit">
+      <span class="h2-visit-glow" aria-hidden="true"></span>
+      <span class="h2-visit-orb h2-visit-orb-1" aria-hidden="true"></span>
+      <span class="h2-visit-orb h2-visit-orb-2" aria-hidden="true"></span>
+
+      <div class="container h2-visit-grid">
+        <div class="h2-visit-copy">
+          <span class="h2-visit-eyebrow reveal"><i data-lucide="map-pin" class="icon-sm"></i> Visit the Showroom</span>
+          <h2 class="reveal" style="--d:.1s">Your home, beautifully finished.</h2>
+          <p class="reveal" style="--d:.2s">Sit, touch and feel the difference. Book a relaxed visit and let our designers walk you through collections, fabrics and finishes.</p>
+          <div class="btn-row reveal" style="--d:.3s">
+            <a href="contact.html" class="btn btn-primary">Book a Visit</a>
+            <a href="products.html" class="btn btn-light">Browse Products</a>
+          </div>
+        </div>
+
+        <div class="h2-visit-cards">
+          <a href="contact.html#map" class="h2-info reveal" style="--d:.1s">
+            <span class="h2-info-icon"><i data-lucide="map-pin" class="icon"></i></span>
+            <div><strong>Showroom</strong><span>24 Heritage Lane, Design District</span></div>
+            <i data-lucide="arrow-up-right" class="icon h2-info-go"></i>
+          </a>
+          <div class="h2-info reveal" style="--d:.2s">
+            <span class="h2-info-icon"><i data-lucide="clock" class="icon"></i></span>
+            <div><strong>Opening hours</strong><span>Open daily, 10:00 AM to 8:00 PM</span></div>
+          </div>
+          <a href="tel:+919876543210" class="h2-info reveal" style="--d:.3s">
+            <span class="h2-info-icon"><i data-lucide="phone" class="icon"></i></span>
+            <div><strong>Call us</strong><span>+91 98765 43210</span></div>
+            <i data-lucide="arrow-up-right" class="icon h2-info-go"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="UrbanHaven home">
+          <img class="brand-mark brand-logo" src="images/logo.png" alt="" aria-hidden="true" />
+          <span class="brand-text">
+            <span class="brand-name">UrbanHaven</span>
+            <span class="brand-tag">Furniture for Modern Living</span>
+          </span>
+        </a>
+        <p>Warm, well-made furniture and decor to help you build a home that feels like yours.</p>
+
+        <div class="socials">
+          <a href="#" class="social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
+          </a>
+          <a href="#" class="social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#living">Living Room</a></li>
+          <li><a href="products.html#bedroom">Bedroom</a></li>
+          <li><a href="products.html#dining">Dining</a></li>
+          <li><a href="products.html#office">Office</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul class="footer-contact">
+          <li><i data-lucide="map-pin" class="icon-sm"></i> 24 Heritage Lane, Design District</li>
+          <li><i data-lucide="clock" class="icon-sm"></i> Daily, 10:00 AM to 8:00 PM</li>
+          <li><i data-lucide="mail" class="icon-sm"></i> hello@urbanhaven.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year">2026</span> UrbanHaven. All rights reserved.</p>
+        <ul class="legal">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="home2-premium.js"></script>
+</body>
+</html>
