@@ -297,7 +297,7 @@
     });
   }
 
-  /* ---------- Spotlight: gallery, finish swatches, wishlist ---------- */
+  /* ---------- Spotlight: gallery, wishlist ---------- */
   var mainImg = $('#h2Main');
   var thumbs = $$('.h2-thumb');
   thumbs.forEach(function (th) {
@@ -310,21 +310,6 @@
         mainImg.onload = function () { mainImg.classList.remove('is-swapping'); };
         setTimeout(function () { mainImg.classList.remove('is-swapping'); }, 700);
       }, 280);
-    });
-  });
-
-  var swatches = $$('.h2-sw');
-  var finishName = $('#h2FinishName');
-  var priceEl = $('#h2Price');
-  swatches.forEach(function (sw) {
-    sw.addEventListener('click', function () {
-      swatches.forEach(function (o) {
-        var on = o === sw;
-        o.classList.toggle('is-active', on);
-        o.setAttribute('aria-checked', String(on));
-      });
-      if (finishName) finishName.textContent = sw.getAttribute('data-name');
-      if (priceEl) priceEl.textContent = sw.getAttribute('data-price');
     });
   });
 

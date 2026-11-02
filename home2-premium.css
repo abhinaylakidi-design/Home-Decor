@@ -1178,40 +1178,6 @@ button {
     color: color-mix(in srgb, var(--text) 80%, transparent);
 }
 
-.h2-opt {
-    margin-bottom: 24px;
-}
-
-.h2-opt-label {
-    display: block;
-    margin-bottom: 12px;
-    font-size: 14px;
-}
-
-.h2-swatches {
-    display: flex;
-    gap: 14px;
-}
-
-.h2-sw {
-    width: 38px;
-    height: 38px;
-    padding: 0;
-    border-radius: 50%;
-    border: 3px solid var(--bg);
-    background: var(--c);
-    box-shadow: 0 0 0 1.5px var(--border);
-    transition: transform .3s var(--ease), box-shadow .3s var(--ease);
-}
-
-.h2-sw:hover {
-    transform: scale(1.12);
-}
-
-.h2-sw.is-active {
-    box-shadow: 0 0 0 2px var(--primary);
-}
-
 .h2-price {
     display: flex;
     align-items: baseline;
