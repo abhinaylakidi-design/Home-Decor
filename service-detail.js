@@ -32,7 +32,7 @@
       title: 'Design Consultation',
       icon: 'compass',
       tag: 'Most Popular',
-      img: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=80',
+      img: './images/design consulation.jpg',
       img2: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1100&q=80',
       tagline: 'One-to-one sessions with our interior designers to shape a layout and palette you love.',
       facts: [
@@ -200,7 +200,7 @@
       title: 'Delivery & Assembly',
       icon: 'truck',
       tag: 'Always Included',
-      img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=80',
+      img: './images/assemble.jpg',
       img2: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1100&q=80',
       tagline: 'Careful white-glove delivery with expert assembly and packaging taken away.',
       facts: [
@@ -256,7 +256,7 @@
       title: 'Home Styling',
       icon: 'sofa',
       tag: 'Finishing Touch',
-      img: 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=2000&q=80',
+      img: './images/home style.jpg',
       img2: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1100&q=80',
       tagline: 'Finishing touches, from rugs and lighting to art, styled to complete each room.',
       facts: [
@@ -408,22 +408,32 @@
       '<div class="sd-hero-shade" aria-hidden="true"></div>' +
       '<span class="sd-hero-mark" aria-hidden="true"><i data-lucide="' + s.icon + '" class="icon"></i></span>' +
       '<div class="container">' +
-        '<nav class="sd-crumbs sd-in" style="--i:0" aria-label="Breadcrumb">' +
-          '<a href="index.html">Home</a><i data-lucide="chevron-right" class="icon-sm flip" aria-hidden="true"></i>' +
-          '<a href="service.html">Services</a><i data-lucide="chevron-right" class="icon-sm flip" aria-hidden="true"></i>' +
-          '<span aria-current="page">' + s.title + '</span>' +
-        '</nav>' +
-        '<div class="sd-hero-badges sd-in" style="--i:1">' +
+        '<div class="sd-hero-badges sd-in" style="--i:0">' +
           '<span class="sd-hero-icon"><i data-lucide="' + s.icon + '" class="icon"></i></span>' +
           '<span class="tag">' + s.tag + '</span>' +
         '</div>' +
-        '<h1 class="sd-in" style="--i:2">' + s.title + '</h1>' +
-        '<p class="sd-lead sd-in" style="--i:3">' + s.tagline + '</p>' +
-        '<div class="btn-row sd-in" style="--i:4">' +
+        '<h1 class="sd-in" style="--i:1">' + s.title + '</h1>' +
+        '<p class="sd-lead sd-in" style="--i:2">' + s.tagline + '</p>' +
+        '<div class="btn-row sd-in" style="--i:3">' +
           '<a href="#pricing" class="btn btn-primary">View Pricing <i data-lucide="arrow-down" class="icon-sm"></i></a>' +
           '<a href="' + contactLink() + '" class="btn btn-light">Book This Service</a>' +
         '</div>' +
-        '<div class="sd-facts sd-in" style="--i:5">' + facts + '</div>' +
+        '<div class="sd-facts sd-in" style="--i:4">' + facts + '</div>' +
+      '</div>';
+  }
+
+  function renderOtherServices(s) {
+    var others = SERVICES.filter(function (other) { return other.slug !== s.slug; }).map(function (other) {
+      return '<li><a class="sd-service-link" href="service-detail.html?service=' + other.slug + '">' + other.title + '</a></li>';
+    }).join('');
+
+    $('#otherServices').innerHTML =
+      '<div class="container">' +
+        '<div class="section-head reveal">' +
+          '<span class="eyebrow">Explore More</span>' +
+          '<h2>Other services</h2>' +
+        '</div>' +
+        '<ul class="sd-service-links">' + others + '</ul>' +
       '</div>';
   }
 
@@ -541,12 +551,6 @@
   }
 
   function renderCta(s) {
-    var others = SERVICES.filter(function (o) { return o.slug !== s.slug; }).map(function (o) {
-      return '<li><a class="sd-other" href="service-detail.html?service=' + o.slug + '">' +
-        '<span class="sd-other-icon"><i data-lucide="' + o.icon + '" class="icon-sm"></i></span>' +
-        '<span>' + o.title + '</span><i data-lucide="arrow-right" class="icon-sm"></i></a></li>';
-    }).join('');
-
     $('#cta').innerHTML =
       '<div class="container">' +
         '<div class="sd-cta reveal">' +
@@ -561,11 +565,6 @@
               '<a href="tel:+919876543210" class="btn btn-light"><i data-lucide="phone" class="icon-sm"></i> +91 98765 43210</a>' +
             '</div>' +
           '</div>' +
-          '<div class="sd-others">' +
-            '<h3>Explore other services</h3>' +
-            '<ul>' + others + '</ul>' +
-            '<a href="service.html" class="sd-all"><i data-lucide="arrow-left" class="icon-sm flip"></i> Back to all services</a>' +
-          '</div>' +
         '</div>' +
       '</div>';
   }
@@ -576,6 +575,7 @@
   if (metaDesc) metaDesc.setAttribute('content', service.title + ' at UrbanHaven: ' + service.tagline);
 
   renderHero(service);
+  renderOtherServices(service);
   renderOverview(service);
   renderWhy(service);
   renderPricing(service);
